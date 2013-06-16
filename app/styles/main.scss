@@ -1,0 +1,18 @@
+@import 'sass-bootstrap/lib/bootstrap';
+
+.hidden {
+	display: none;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    min-width: 640px;
+    min-height: 960px;
+}
+
+.launchButtons > .btn {
+	width: 400px;
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}

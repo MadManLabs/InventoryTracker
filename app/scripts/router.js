@@ -11,7 +11,15 @@ define([
 ], function( Backbone ) {
 	app.Router.Router = Backbone.Router.extend( {
 		routes: {
-			''		: 'launchApp'
+			''		: 'default',
+			'launch': 'launchApp',
+			'scan'	: 'launchScan',
+			'lookUp': 'launchLookUp',
+			'browse': 'launchBrowse',
+		},
+
+		default: function() {
+			this.navigate( 'launch', { trigger: true });
 		},
 
 		launchApp: function() {
@@ -21,6 +29,18 @@ define([
 			app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
 
 			app.Views.launchPage.render();
+		},
+
+		launchScan: function() {
+			app.Views.scanPage.render();
+		},
+
+		launchLookUp: function() {
+			app.Views.lookUpPage.render();
+		},
+
+		launchBrowse: function() {
+			app.Views.browsePage.render();
 		},
 
 		initializeStorage: function() {

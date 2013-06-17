@@ -19,15 +19,15 @@ define([
 		},
 
 		scan: function() {
-			app.Views.scanPage.render();
+			app.Router.router.navigate( 'scan', { trigger: true });
 		},
 
 		lookUp: function() {
-			app.Views.lookUpPage.render();
+			app.Router.router.navigate( 'lookUp', { trigger: true });
 		},
 
 		browse: function() {
-			app.Views.browsePage.render();
+			app.Router.router.navigate( 'browse', { trigger: true });
 		}
 	});
 });

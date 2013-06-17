@@ -50,8 +50,10 @@ require([
 	'views/departmentsList',
 ], function ( Backbone ) {
 	app.Router.router = new app.Router.Router();
-	console.log(app.Router.router);
+
 	app.Router.router.initializeStorage();
 
 	Backbone.history.start();
+
+	return app.Router.router;
 });

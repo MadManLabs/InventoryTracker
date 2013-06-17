@@ -48,11 +48,9 @@ require([
 	'views/scanPage',
 	'views/lookUpPage',
 	'views/browsePage',
-	'views/devicesList',
-	'views/departmentsList',
+	'views/listPage'
 ], function ( Backbone ) {
 	app.Router.router = new app.Router.Router();
-
 	app.Router.router.initializeStorage();
 
 	Backbone.history.start();

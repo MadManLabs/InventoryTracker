@@ -52,19 +52,13 @@
 		</script>
 
 		<script id='browsePageTemplate' type='text/template'>
-			<section class='devicesList'></section>
-			<section class='departmentsList'></section>
+			<button class='devicesList btn'>Devices</button>
+			<button class='departmentsList btn'>Departments</button>
 		</script>
 
-		<script id='devicesListTemplate' type='text/template'>
+		<script id='listPageTemplate' type='text/template'>
 			<% collection.each( function( device ) { %>
 				<span><%= device.get( 'name' ) %></span>
-			<% }); %>
-		</script>
-
-		<script id='departmentsListTemplate' type='text/template'>
-			<% collection.each( function( department ) { %>
-				<span><%= department.get( 'name' ) %></span>
 			<% }); %>
 		</script>
 

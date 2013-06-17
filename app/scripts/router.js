@@ -12,13 +12,14 @@ define([
 	app.Router.Router = Backbone.Router.extend( {
 
 		routes: {
-			''					: 'default',
-			'launch'			: 'launchApp',
-			'scan'				: 'launchScan',
-			'lookUp'			: 'launchLookUp',
-			'browse'			: 'launchBrowse',
-			'list/devices'		: 'listDevices',
-			'list/departments'	: 'listDepartments'
+			''						: 'default',
+			'launch'				: 'launchApp',
+			'scan'					: 'launchScan',
+			'lookUp'				: 'launchLookUp',
+			'browse'				: 'launchBrowse',
+			'list/devices'			: 'listDevices',
+			'list/departments'		: 'listDepartments',
+			'list/:device/models'	: 'listModels'
 		},
 
 		initialize: function() {
@@ -51,12 +52,33 @@ define([
 
 		listDevices: function() {
 			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.listType = 'device';
+			app.Views.listPage.listFilter = undefined;
+			app.Views.listPage.callingAttribute = undefined;
+			app.Views.listPage.showAttribute = 'type';
 			app.Views.listPage.render();
 		},
 
 		listDepartments: function() {
 			app.Views.listPage.collection = app.Collections.departments;
+			app.Views.listPage.listType = 'department';
+			app.Views.listPage.listFilter = undefined;
+			app.Views.listPage.callingAttribute = undefined;
+			app.Views.listPage.showAttribute = 'department';
 			app.Views.listPage.render();
+		},
+
+		listModels: function( device ) {
+			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.listType = 'model';
+			app.Views.listPage.listFilter = device;
+			app.Views.listPage.callingAttribute = 'type';
+			app.Views.listPage.showAttribute = 'device';
+			app.Views.listPage.render();
+		},
+
+		getClickedElement: function( event ) {
+			return $( event.target );
 		},
 
 		initializeStorage: function() {
@@ -99,10 +121,6 @@ define([
 																		{ id: 7, name: 'Rachel Black', department: 'Sup and Reg' },
 																		{ id: 8, name: 'Catherine Cardon', department: 'Sup and Reg' },
 																		{ id: 9, name: 'Amy Chan', department: 'Sup and Reg' } ]);
-
-			console.log(app.Collections.devices.toJSON());
-			console.log(app.Collections.departments.toJSON());
-			console.log(app.Collections.employees.toJSON());
 		}
 	});
 });

@@ -59,9 +59,11 @@
 		</script>
 
 		<script id='listPageTemplate' type='text/template'>
-			<% collection.each( function( device ) { %>
-				<span><%= device.get( 'device' ) %></span>
-			<% }); %>
+			<div class='listButtons btn-group btn-group-vertical'>
+				<% _.each( listElements, function( element ) { %>
+					<button class='<%= this.listType %> btn'><%= element %></button>
+				<% }, this ); %>
+			</div>
 		</script>
 
 		<!-- build:js scripts/main.js -->

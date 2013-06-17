@@ -11,19 +11,19 @@ define([
 		template: _.template( $( '#browsePageTemplate' ).html() ),
 
 		events: {
-			'click .devicesList'	: 'showDevicesList',
-			'click .departmentsList': 'showDepartmentsList'
+			'click .devicesList'	: 'listDevices',
+			'click .departmentsList': 'listDepartments'
 		},
 
 		render: function() {
 			this.$el.html( this.template );
 		},
 
-		showDevicesList: function() {
+		listDevices: function() {
 			app.Router.router.navigate( 'list/devices', { trigger: true });
 		},
 
-		showDepartmentsList: function() {
+		listDepartments: function() {
 			app.Router.router.navigate( 'list/departments', { trigger: true });
 		}
 	});

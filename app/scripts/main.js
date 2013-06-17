@@ -5,13 +5,10 @@
 var app = {
 	Models: {},
 	Collections: {},
-	Views: {}
+	Views: {},
+	Router: {}
 };
-/*
-app.Models = {};
-app.Collections = {};
-app.Views = {};
-*/
+
 require.config({
 	shim: {
 		underscore: {
@@ -40,6 +37,7 @@ require.config({
 require([
 	'backbone',
 	'bootstrap',
+	'router',
 	'models/device',
 	'models/department',
 	'collections/devices',
@@ -51,18 +49,9 @@ require([
 	'views/devicesList',
 	'views/departmentsList',
 ], function ( Backbone ) {
+	app.Router.router = new app.Router.Router();
+	console.log(app.Router.router);
+	app.Router.router.initializeStorage();
+
 	Backbone.history.start();
-
-	app.Collections.devices = new app.Collections.Devices([	{ 'id': 1, 'name': 'iPhone 4', 'manufacturer': 'Apple' },
-															{ 'id': 2, 'name': 'iPad 2', 'manufacturer': 'Apple' },
-															{ 'id': 3, 'name': 'Galaxy Nexus', 'manufacturer': 'Samsung' } ]);
-
-	app.Collections.departments = new app.Collections.Departments([	{ id: 1, name: 'Research' },
-																	{ id: 2, name: 'ITD' },
-																	{ id: 3, name: 'Community Outreach' } ]);
-
-	app.Views.launchPage = new app.Views.LaunchPage();
-	app.Views.scanPage = new app.Views.ScanPage();
-	app.Views.lookUpPage = new app.Views.LookUpPage();
-	app.Views.browsePage = new app.Views.BrowsePage();
 });

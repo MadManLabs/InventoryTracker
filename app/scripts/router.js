@@ -30,12 +30,12 @@ define([
 				// no native support for HTML5 storage :(
 				// maybe try dojox.storage or a third-party solution
 				app.Collections.devices = new app.Collections.Devices([	{ 'id': 1, 'name': 'iPhone 4', 'manufacturer': 'Apple' },
-															{ 'id': 2, 'name': 'iPad 2', 'manufacturer': 'Apple' },
-															{ 'id': 3, 'name': 'Galaxy Nexus', 'manufacturer': 'Samsung' } ]);
+																		{ 'id': 2, 'name': 'iPad 2', 'manufacturer': 'Apple' },
+																		{ 'id': 3, 'name': 'Galaxy Nexus', 'manufacturer': 'Samsung' } ]);
 
 				app.Collections.departments = new app.Collections.Departments([	{ id: 1, name: 'Research' },
-																	{ id: 2, name: 'ITD' },
-																	{ id: 3, name: 'Community Outreach' } ]);
+																		{ id: 2, name: 'ITD' },
+																		{ id: 3, name: 'Community Outreach' } ]);
 			}
 		}
 	});

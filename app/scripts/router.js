@@ -27,6 +27,7 @@ define([
 			app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
 			app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();
 			app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
+			app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
 
 			app.Views.launchPage.render();
 		},

@@ -17,8 +17,6 @@ define([
 
 		render: function() {
 			this.$el.html( this.template );
-			app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
-
 		},
 
 		showDevicesList: function() {

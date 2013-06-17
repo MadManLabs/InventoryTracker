@@ -21,6 +21,7 @@ define([
 
 		showDevicesList: function() {
 			app.Views.listPage.collection = app.Collections.devices;
+			console.log(app.Views.listPage.collection);
 			app.Views.listPage.render();
 		},
 

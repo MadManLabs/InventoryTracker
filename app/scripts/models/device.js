@@ -8,6 +8,10 @@ define([
 			'name'			: '',
 			'description'	: '',
 			'manufacturer'	: '',
+			'owner'			: '',
+			'assigned'		: moment( 'MM-DD-YYYY' ),
+			'expires'		: moment( 'MM-DD-YYYY' ),
+			'department'	: '',
 			'image'			: undefined
 		}
 	});

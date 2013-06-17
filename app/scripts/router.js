@@ -65,13 +65,44 @@ define([
 			} else {
 
 			}
-			app.Collections.devices = new app.Collections.Devices([	{ id: 1, name: 'iPhone 4', manufacturer: 'Apple' },
-																	{ id: 2, name: 'iPad 2', manufacturer: 'Apple' },
-																	{ id: 3, name: 'Galaxy Nexus', manufacturer: 'Samsung' } ]);
+			app.Collections.devices = new app.Collections.Devices([	{ id: 1, device: 'iPhone 4', type: 'phone', department: 'Information Technology', owner: 'Chris Butler', manufacturer: 'Apple' },
+																	{ id: 2, device: 'iPad 2', type: 'tablet', department: 'Information Technology', owner: 'Keith Gibbs', manufacturer: 'Apple' },
+																	{ id: 3, device: 'Nexus 10', type: 'tablet', department: 'Research', owner: 'David Brown', manufacturer: 'Samsung' },
+																	{ id: 4, device: 'iPad 2', type: 'tablet', department: 'Research', owner: 'Patricia Cortes', manufacturer: 'Apple' },
+																	{ id: 5, device: 'iPad 3', type: 'tablet', department: 'Information Technology', owner: 'Jared Collier', manufacturer: 'Apple' },
+																	{ id: 6, device: 'iPhone 5', type: 'phone', department: 'Research', owner: 'Patricia Cortes', manufacturer: 'Apple' },
+																	{ id: 7, device: 'iPhone 5', type: 'phone', department: 'Information Technology', owner: 'Jared Collier', manufacturer: 'Apple' },
+																	{ id: 8, device: 'Kindle Fire HD', type: 'tablet', department: 'Information Technology', owner: 'Jared Collier', manufacturer: 'Kindle' },
+																	{ id: 9, device: 'Kindle Fire HD', type: 'tablet', department: 'Research', owner: 'David Brown', manufacturer: 'Kindle' },
+																	{ id: 10, device: 'Galaxy Note 8', type: 'tablet', department: 'Information Technology', owner: 'Chris Butler', manufacturer: 'Samsung' },
+																	{ id: 11, device: 'iPad Mini', type: 'tablet', department: 'Information Technology', owner: 'Jared Collier', manufacturer: 'Apple' },
+																	{ id: 12, device: 'MacBook Pro', type: 'laptop', department: 'Information Technology', owner: 'Jared Collier', manufacturer: 'Apple' },
+																	{ id: 13, device: 'MacBook Pro', type: 'laptop', department: 'Information Technology', owner: 'Keith Gibbs', manufacturer: 'Apple' },
+																	{ id: 14, device: 'EliteBook 8570', type: 'laptop', department: 'Research', owner: 'Matthew Curtis', manufacturer: 'Hewlett Packard' },
+																	{ id: 15, device: 'EliteBook 8570', type: 'laptop', department: 'Sup and Reg', owner: 'Rachel Black', manufacturer: 'Hewlett Packard' },
+																	{ id: 16, device: 'EliteBook 8580', type: 'laptop', department: 'Sup and Reg', owner: 'Catherine Cardon', manufacturer: 'Hewlett Packard' },
+																	{ id: 17, device: 'EliteBook 8570', type: 'laptop', department: 'Sup and Reg', owner: 'Amy Chan', manufacturer: 'Hewlett Packard' },
+																	{ id: 18, device: 'Blackberry Bold 9900', type: 'phone', department: 'Information Technology', owner: 'Jared Collier', manufacturer: 'RIM' },
+																	{ id: 19, device: 'Blackberry Bold 9900', type: 'phone', department: 'Research', owner: 'David Brown', manufacturer: 'RIM' },
+																	{ id: 20, device: 'Blackberry Bold 9900', type: 'phone', department: 'Sup and Reg', owner: 'Rachel Black', manufacturer: 'RIM' }, ]);
 
-			app.Collections.departments = new app.Collections.Departments([	{ id: 1, name: 'Research' },
-																			{ id: 2, name: 'ITD' },
-																			{ id: 3, name: 'Community Outreach' } ]);
+			app.Collections.departments = new app.Collections.Departments([	{ id: 1, device: 'Research' },
+																			{ id: 2, device: 'ITD' },
+																			{ id: 3, device: 'Community Outreach' } ]);
+
+			app.Collections.employees = new app.Collections.Employees([ { id: 1, name: 'Jared Collier', department: 'Information Technology' },
+																		{ id: 2, name: 'Keith Gibbs', department: 'Information Technology' },
+																		{ id: 3, name: 'Chris Butler', department: 'Information Technology' },
+																		{ id: 4, name: 'David Brown', department: 'Research' },
+																		{ id: 5, name: 'Patricia Cortes', department: 'Research' },
+																		{ id: 6, name: 'Matthew Curtis', department: 'Research' },
+																		{ id: 7, name: 'Rachel Black', department: 'Sup and Reg' },
+																		{ id: 8, name: 'Catherine Cardon', department: 'Sup and Reg' },
+																		{ id: 9, name: 'Amy Chan', department: 'Sup and Reg' } ]);
+
+			console.log(app.Collections.devices.toJSON());
+			console.log(app.Collections.departments.toJSON());
+			console.log(app.Collections.employees.toJSON());
 		}
 	});
 });

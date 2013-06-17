@@ -10,12 +10,23 @@ define([
 	'views/browsePage'
 ], function( Backbone ) {
 	app.Router.Router = Backbone.Router.extend( {
+
 		routes: {
-			''		: 'default',
-			'launch': 'launchApp',
-			'scan'	: 'launchScan',
-			'lookUp': 'launchLookUp',
-			'browse': 'launchBrowse',
+			''					: 'default',
+			'launch'			: 'launchApp',
+			'scan'				: 'launchScan',
+			'lookUp'			: 'launchLookUp',
+			'browse'			: 'launchBrowse',
+			'list/devices'		: 'listDevices',
+			'list/departments'	: 'listDepartments'
+		},
+
+		initialize: function() {
+			app.Views.launchPage = app.Views.launchPage || new app.Views.LaunchPage();
+			app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
+			app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();
+			app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
+			app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
 		},
 
 		default: function() {
@@ -23,12 +34,6 @@ define([
 		},
 
 		launchApp: function() {
-			app.Views.launchPage = app.Views.launchPage || new app.Views.LaunchPage();
-			app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
-			app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();
-			app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
-			app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
-
 			app.Views.launchPage.render();
 		},
 
@@ -42,6 +47,16 @@ define([
 
 		launchBrowse: function() {
 			app.Views.browsePage.render();
+		},
+
+		listDevices: function() {
+			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.render();
+		},
+
+		listDepartments: function() {
+			app.Views.listPage.collection = app.Collections.departments;
+			app.Views.listPage.render();
 		},
 
 		initializeStorage: function() {

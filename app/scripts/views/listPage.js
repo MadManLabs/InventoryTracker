@@ -12,25 +12,48 @@ define([
 		events: {
 			'click .device': 'listModels',
 			'click .department': 'listEmployees',
-			'click .employee': 'listAssets',
-			'click .model': 'listAssets'
+			'click .employee': 'listEmployeesDevices',
+			'click .model': 'listModelOwners'
 		},
 
 		listModels: function( event ) {
 			var clickedElement = app.Router.router.getClickedElement( event );
 			var target = clickedElement.html();
-			app.Router.router.navigate( 'list/' + target + '/models', { trigger: true });
+			app.Router.router.navigate( 'list/devices/' + target, { trigger: true });
 		},
 
 		listEmployees: function( event ) {
-//			app.Router.router.navigate( 'list/:department/employees', { trigger: true });
+			var clickedElement = app.Router.router.getClickedElement( event );
+			var target = clickedElement.html();
+			app.Router.router.navigate( 'list/departments/' + target, { trigger: true });
 		},
 
-		listAssets: function( event ) {
-//			app.Router.router.navigate( 'list/', { trigger: true });
+		listEmployeesDevices: function( event ) {
+			var clickedElement = app.Router.router.getClickedElement( event );
+			var target = clickedElement.html();
+
+			app.Router.router.navigate( 'list/employee/' + target, { trigger: true });
+		},
+
+		listModelOwners: function( event ) {
+			var clickedElement = app.Router.router.getClickedElement( event );
+			var target = clickedElement.html();
+
+			app.Router.router.navigate( 'list/model/' + target, { trigger: true });
 		},
 
 		render: function() {
+			// this.callingAttribute	: the class of the button which caused this list to generate
+			// this.listFilter			: the element that must be matched.  If a user clicked on tablet, only tablets should be displayed.
+			//							  If a user clicks on an employee, only devices for that employee should be displayed
+			// this.showAttribute		: the attribute of each model that should be displayed as button text
+			// this.listType			: used in the template.  This is the class applied to each button in the generated list
+
+			// this.callingAttribute	'type'		'device'
+			// this.listFilter			'tablet'	'iPhone 5'
+			// this.showAttribute		'device'	'id'
+			// this.listType			'model'		'asset'
+
 			var filteredCollection;
 			var listElements = [];
 
@@ -40,8 +63,8 @@ define([
 				}, this );
 
 				_.each(filteredCollection, function( element ) {
-					listElements.push( element.get( 'device' ) );
-				});
+					listElements.push( element.get( this.showAttribute ) );
+				}, this );
 			} else {
 				listElements = this.collection.pluck( this.showAttribute );
 			}

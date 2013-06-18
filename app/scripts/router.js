@@ -12,14 +12,17 @@ define([
 	app.Router.Router = Backbone.Router.extend( {
 
 		routes: {
-			''						: 'default',
-			'launch'				: 'launchApp',
-			'scan'					: 'launchScan',
-			'lookUp'				: 'launchLookUp',
-			'browse'				: 'launchBrowse',
-			'list/devices'			: 'listDevices',
-			'list/departments'		: 'listDepartments',
-			'list/:device/models'	: 'listModels'
+			''								: 'default',
+			'launch'						: 'launchApp',
+			'scan'							: 'launchScan',
+			'lookUp'						: 'launchLookUp',
+			'browse'						: 'launchBrowse',
+			'list/devices'					: 'listDevices',
+			'list/departments'				: 'listDepartments',
+			'list/devices/:device'			: 'listModels',
+			'list/departments/:department'	: 'listEmployees',
+			'list/employee/:employee'		: 'listEmployeesDevices',
+			'list/model/:model'				: 'listModelOwners'
 		},
 
 		initialize: function() {
@@ -52,6 +55,7 @@ define([
 
 		listDevices: function() {
 			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.collection2 = undefined;
 			app.Views.listPage.listType = 'device';
 			app.Views.listPage.listFilter = undefined;
 			app.Views.listPage.callingAttribute = undefined;
@@ -61,6 +65,7 @@ define([
 
 		listDepartments: function() {
 			app.Views.listPage.collection = app.Collections.departments;
+			app.Views.listPage.collection2 = undefined;
 			app.Views.listPage.listType = 'department';
 			app.Views.listPage.listFilter = undefined;
 			app.Views.listPage.callingAttribute = undefined;
@@ -70,10 +75,38 @@ define([
 
 		listModels: function( device ) {
 			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.collection2 = undefined;
 			app.Views.listPage.listType = 'model';
 			app.Views.listPage.listFilter = device;
 			app.Views.listPage.callingAttribute = 'type';
 			app.Views.listPage.showAttribute = 'device';
+			app.Views.listPage.render();
+		},
+
+		listEmployees: function( department ) {
+			app.Views.listPage.collection = app.Collections.employees;
+			app.Views.listPage.listType = 'employee';
+			app.Views.listPage.listFilter = department;
+			app.Views.listPage.callingAttribute = 'department';
+			app.Views.listPage.showAttribute = 'name';
+			app.Views.listPage.render();
+		},
+
+		listEmployeesDevices: function( employee ) {
+			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.listType = 'asset';
+			app.Views.listPage.listFilter = employee;
+			app.Views.listPage.callingAttribute = 'owner';
+			app.Views.listPage.showAttribute = 'id';
+			app.Views.listPage.render();
+		},
+
+		listModelOwners: function( model ) {
+			app.Views.listPage.collection = app.Collections.devices;
+			app.Views.listPage.listType = 'asset';
+			app.Views.listPage.listFilter = model;
+			app.Views.listPage.callingAttribute = 'device';
+			app.Views.listPage.showAttribute = 'id';
 			app.Views.listPage.render();
 		},
 
@@ -108,9 +141,9 @@ define([
 																	{ id: 19, device: 'Blackberry Bold 9900', type: 'phone', department: 'Research', owner: 'David Brown', manufacturer: 'RIM' },
 																	{ id: 20, device: 'Blackberry Bold 9900', type: 'phone', department: 'Sup and Reg', owner: 'Rachel Black', manufacturer: 'RIM' }, ]);
 
-			app.Collections.departments = new app.Collections.Departments([	{ id: 1, device: 'Research' },
-																			{ id: 2, device: 'ITD' },
-																			{ id: 3, device: 'Community Outreach' } ]);
+			app.Collections.departments = new app.Collections.Departments([	{ id: 1, department: 'Research' },
+																			{ id: 2, department: 'Information Technology' },
+																			{ id: 3, department: 'Sup and Reg' } ]);
 
 			app.Collections.employees = new app.Collections.Employees([ { id: 1, name: 'Jared Collier', department: 'Information Technology' },
 																		{ id: 2, name: 'Keith Gibbs', department: 'Information Technology' },

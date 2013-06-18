@@ -52,7 +52,8 @@ require([
 	'views/scanPage',
 	'views/lookUpPage',
 	'views/browsePage',
-	'views/listPage'
+	'views/listPage',
+	'views/devicePage'
 ], function ( Backbone ) {
 	app.Router.router = new app.Router.Router();
 	app.Router.router.initializeStorage();

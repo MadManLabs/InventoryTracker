@@ -10,10 +10,11 @@ define([
 		template: _.template( $( '#listPageTemplate' ).html() ),
 
 		events: {
-			'click .device': 'listModels',
-			'click .department': 'listEmployees',
-			'click .employee': 'listEmployeesDevices',
-			'click .model': 'listModelOwners'
+			'click .device'			: 'listModels',
+			'click .department'		: 'listEmployees',
+			'click .employee'		: 'listEmployeesDevices',
+			'click .model'			: 'listModelOwners',
+			'click .asset'			: 'showAsset'
 		},
 
 		listModels: function( event ) {
@@ -42,17 +43,27 @@ define([
 			app.Router.router.navigate( 'list/model/' + target, { trigger: true });
 		},
 
+		showAsset: function( event ) {
+			var clickedElement = app.Router.router.getClickedElement( event );
+
+			var target;
+
+			if( clickedElement.hasClass( 'asset' ) || clickedElement.hasClass( 'subText' ) )
+				target = clickedElement.find( '.serial' ).html();
+			else if( clickedElement.hasClass( 'serial' ) )
+				target = clickedElement.html();
+			else
+				target = clickedElement.siblings( '.serial' ).html();
+
+			app.Router.router.navigate( 'device/' + target, { trigger: true });
+		},
+
 		render: function() {
 			// this.callingAttribute	: the class of the button which caused this list to generate
 			// this.listFilter			: the element that must be matched.  If a user clicked on tablet, only tablets should be displayed.
 			//							  If a user clicks on an employee, only devices for that employee should be displayed
 			// this.showAttribute		: the attribute of each model that should be displayed as button text
 			// this.listType			: used in the template.  This is the class applied to each button in the generated list
-
-			// this.callingAttribute	'type'		'device'
-			// this.listFilter			'tablet'	'iPhone 5'
-			// this.showAttribute		'device'	'id'
-			// this.listType			'model'		'asset'
 
 			var filteredCollection;
 			var listElements = [];

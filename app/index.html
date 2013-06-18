@@ -78,6 +78,24 @@
 			</div>
 		</script>
 
+		<script id='devicePageTemplate' type='text/template'>
+			<div class='deviceHeader centered uneditable'><%= model.get( 'device' ) %></div>
+			<% if( expired ) { %>
+			<div class='deviceExpires centered expired bold'>Expired <%= expired %></div>
+			<% } else { %>
+			<div class='deviceExpires centered'>Expires <%= expires %></div>
+			<% } %>
+			<% if( model.get( 'lost' ) ) { %>
+			<div class='deviceLost centered'>This device has been lost</div>
+			<% } %>
+			<div class='deviceSerial deviceElement'><span class='deviceAttributeLabel span5'>Serial number:</span><span class='deviceAttribute'><%= model.get( 'serial' ) %></span</div>
+			<div class='deviceType deviceElement'><span class='deviceAttributeLabel span5'>Device type:</span><span class='deviceAttribute'><%= model.get( 'type' ) %></span></div>
+			<div class='deviceOwner deviceElement'><span class='deviceAttributeLabel span5'>Owner:</span><span class='deviceAttribute editable'><%= model.get( 'owner' ) %></span></div>
+			<div class='deviceAssigned deviceElement'><span class='deviceAttributeLabel span5'>Assigned:</span><span class='deviceAttribute'><%= model.get( 'assigned' ).format('MMMM Do YYYY') %></span></div>
+			<div class='deviceExpires deviceElement'><span class='deviceAttributeLabel span5'><% if( expired ) { %>Expired:<% } else { %>Expires:<% } %></span><span class='deviceAttribute'><%= model.get( 'expires' ).format('MMMM Do YYYY') %></span></div>
+
+		</script>
+
 		<!-- build:js scripts/main.js -->
 		<script data-main='scripts/main' src='bower_components/requirejs/require.js'></script>
 		<!-- endbuild -->

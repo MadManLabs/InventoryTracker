@@ -18,3 +18,21 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+
+.subText {
+	display: block;
+	font-size: .7em;
+	color: grey;
+}
+
+.divider {
+	margin: 0 10px;
+	font-weight: bold;
+}
+
+.expired,
+.expired:hover,
+.expired:focus,
+.expired > .subText {
+	color: hsl(0, 100%, 71%);
+}

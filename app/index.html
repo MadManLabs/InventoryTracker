@@ -60,8 +60,20 @@
 
 		<script id='listPageTemplate' type='text/template'>
 			<div class='listButtons btn-group btn-group-vertical'>
-				<% _.each( listElements, function( element ) { %>
-					<button class='<%= this.listType %> btn'><%= element %></button>
+				<% _.each( listElements, function( element ) {
+					if( this.subText ) { %>
+						<button class='<%= this.listType %> btn <% if( element.expires ) { %>expired<% } %>'>
+							<%= element.showAttribute %>
+							<span class='subText'>
+								<span class='serial'><%= element.subText %></span>
+								<% if( element.expires ) { %>
+								<span class='divider'>|</span>
+								<span class='expiredMessage'>Expired <%= element.expires %></span>
+								<% } %>
+							</span>
+						</button>
+					<% } else %>
+						<button class='<%= this.listType %> btn'><%= element %></button>
 				<% }, this ); %>
 			</div>
 		</script>

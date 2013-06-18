@@ -56,6 +56,7 @@ define([
 
 			var filteredCollection;
 			var listElements = [];
+			var expires;
 
 			if( this.listFilter ) {
 				filteredCollection = this.collection.filter( function( element ) {
@@ -63,7 +64,14 @@ define([
 				}, this );
 
 				_.each(filteredCollection, function( element ) {
-					listElements.push( element.get( this.showAttribute ) );
+					expires = undefined;
+
+					if ( element.get( 'expires' ) - moment() <= 0 )
+						expires = element.get( 'expires' ).fromNow();
+					if( this.subText )
+						listElements.push( { showAttribute: element.get( this.showAttribute ), subText: element.get( this.subText ), expires: expires } );
+					else
+						listElements.push( element.get( this.showAttribute ) );
 				}, this );
 			} else {
 				listElements = this.collection.pluck( this.showAttribute );

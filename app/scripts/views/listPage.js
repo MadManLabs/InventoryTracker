@@ -89,6 +89,7 @@ define([
 			}
 
 			var uniqueListElements = _.unique( listElements );
+
 			this.$el.html( this.template({ listElements: uniqueListElements }) );
 		}
 	});

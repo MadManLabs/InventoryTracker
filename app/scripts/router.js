@@ -17,7 +17,7 @@ define([
 			'scan'							: 'launchScan',
 			'lookUp'						: 'launchLookUp',
 			'browse'						: 'launchBrowse',
-			'list/devices'					: 'listDevices',
+			'list/devices'					: 'listDeviceTypes',
 			'list/departments'				: 'listDepartments',
 			'list/devices/:device'			: 'listModels',
 			'list/departments/:department'	: 'listEmployees',
@@ -55,7 +55,7 @@ define([
 			app.Views.browsePage.render();
 		},
 
-		listDevices: function() {
+		listDeviceTypes: function() {
 			app.Views.listPage.collection = app.Collections.devices;
 			app.Views.listPage.collection2 = undefined;
 			app.Views.listPage.listType = 'device';

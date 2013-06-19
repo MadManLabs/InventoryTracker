@@ -10,6 +10,7 @@ define([
 
 		events: {
 			'click .submitLookUp'	: 'submitLookUp',
+			'focus .serialInput'	: 'hideErrorMessage'
 		},
 
 		render: function() {
@@ -17,8 +18,18 @@ define([
 		},
 
 		submitLookUp: function() {
-			console.log('submit device number look up');
+			var target = $( '.serialInput' ).val();
+			var serialNumbers = app.Collections.devices.pluck( 'serial' );
+
+			if( _.contains( serialNumbers, target ) )
+				app.Router.router.navigate( 'device/' + target, { trigger: true });
+			else
+				$( '.lookUpError' ).fadeIn();
 		},
+
+		hideErrorMessage: function() {
+			$( '.lookUpError' ).fadeOut();
+		}
 	});
 
 	return app.Views.LookUpPage;

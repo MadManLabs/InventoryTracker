@@ -14,8 +14,8 @@
 
 .hero-unit {
 	margin: 50px auto 50px auto;
-	min-width: 640px;
-	min-height: 940px;
+	width: 320px;
+	min-height: 480px;
 }
 
 .launchButtons,
@@ -35,7 +35,7 @@
 
 .subText {
 	display: block;
-	font-size: .7em;
+	font-size: .6em;
 	color: grey;
 }
 
@@ -82,7 +82,7 @@
 
 .deviceElement {
 	margin-top: 20px;
-	font-size: 1.5em;
 	font-weight: bold;
+	font-size: .9em;
 	color: hsl(0, 1%, 61%);
 }

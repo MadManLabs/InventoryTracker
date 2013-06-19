@@ -95,23 +95,23 @@
 				<% } %>
 			</div>
 			<div class='deviceSerial deviceElement'>
-				<span class='deviceAttributeLabel span6'>Serial number:</span>
+				<span class='deviceAttributeLabel span2'>Serial number:</span>
 				<span class='deviceAttribute'><%= model.get( 'serial' ) %></span>
 			</div>
 			<div class='deviceType deviceElement'>
-				<span class='deviceAttributeLabel span6'>Device type:</span>
+				<span class='deviceAttributeLabel span2'>Device type:</span>
 				<span class='deviceAttribute editable'><%= model.get( 'type' ) %></span>
 			</div>
 			<div class='deviceOwner deviceElement'>
-				<span class='deviceAttributeLabel span6'>Owner:</span>
+				<span class='deviceAttributeLabel span2'>Owner:</span>
 				<span class='deviceAttribute editable'><%= model.get( 'owner' ) %></span>
 			</div>
 			<div class='deviceAssigned deviceElement'>
-				<span class='deviceAttributeLabel span6'>Assigned:</span>
+				<span class='deviceAttributeLabel span2'>Assigned:</span>
 				<span class='deviceAttribute'><%= model.get( 'assigned' ).format('MMMM Do YYYY') %></span>
 			</div>
 			<div class='deviceExpires deviceElement'>
-				<span class='deviceAttributeLabel span6'><% if( expired ) { %>Expired:<% } else { %>Expires:<% } %></span>
+				<span class='deviceAttributeLabel span2'><% if( expired ) { %>Expired:<% } else { %>Expires:<% } %></span>
 				<span class='deviceAttribute'><%= model.get( 'expires' ).format('MMMM Do YYYY') %></span>
 			</div>
 		</script>

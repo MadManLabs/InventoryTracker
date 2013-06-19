@@ -12,7 +12,6 @@ require.config({
 		backbone: '../bower_components/backbone-amd/backbone',
 		underscore: '../bower_components/underscore-amd/underscore',
 		moment: '../bower_components/moment/moment',
-		localStorage: '../bower_components/backbone.localStorage/backbone.localStorage',
 		bootstrap: 'vendor/bootstrap'
 	}
 });
@@ -22,7 +21,6 @@ require([
 	'router',
 	'bootstrap',
 	'moment',
-	'localStorage',
 	'models/device',
 	'models/department',
 	'models/employee',

@@ -82,9 +82,11 @@ define([
 
 					if ( element.get( 'expires' ) - moment() <= 0 ) {
 						expires = element.get( 'expires' ).fromNow();
-					if( this.subText )
+					}
+					if ( this.subText ) {
 						listElements.push( { showAttribute: element.get( this.showAttribute ), subText: element.get( this.subText ), expires: expires, lost: element.get( 'lost' ) } );
-					else
+					}
+					else {
 						listElements.push( element.get( this.showAttribute ) );
 					}
 				}, this );

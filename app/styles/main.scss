@@ -13,9 +13,9 @@
 }
 
 .hero-unit {
-	margin: 50px auto 0 auto;
+	margin: 50px auto 50px auto;
 	min-width: 640px;
-	min-height: 960px;
+	min-height: 940px;
 }
 
 .launchButtons,
@@ -47,11 +47,16 @@
 .expired,
 .expired:hover,
 .expired:focus,
-.expired > .subText {
+.expired > .subText,
+.lost,
+.lost:hover,
+.lost:focus,
+.lost > .subText {
 	color: hsl(0, 100%, 71%);
 }
 
-.asset.expired {
+.asset.expired,
+.asset.lost {
 	color: hsl(0, 100%, 71%);
 }
 

@@ -62,13 +62,17 @@
 			<div class='listButtons btn-group btn-group-vertical'>
 				<% _.each( listElements, function( element ) {
 					if( this.subText ) { %>
-						<button class='<%= this.listType %> btn <% if( element.expires ) { %>expired<% } %>'>
+						<button class='<%= this.listType %> btn<% if( element.expires ) { %> expired<% } %><% if( element.lost ) { %> lost<% } %>'>
 							<%= element.showAttribute %>
 							<span class='subText'>
 								<span class='serial'><%= element.subText %></span>
 								<% if( element.expires ) { %>
 								<span class='divider'>|</span>
 								<span class='expiredMessage'>Expired <%= element.expires %></span>
+								<% } %>
+								<% if( element.lost ) { %>
+								<span class='divider'>|</span>
+								<span class='lostMessage'>Device lost</span>
 								<% } %>
 							</span>
 						</button>
@@ -96,7 +100,7 @@
 			</div>
 			<div class='deviceType deviceElement'>
 				<span class='deviceAttributeLabel span6'>Device type:</span>
-				<span class='deviceAttribute'><%= model.get( 'type' ) %></span>
+				<span class='deviceAttribute editable'><%= model.get( 'type' ) %></span>
 			</div>
 			<div class='deviceOwner deviceElement'>
 				<span class='deviceAttributeLabel span6'>Owner:</span>

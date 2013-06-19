@@ -27,6 +27,7 @@ require([
 	'collections/devices',
 	'collections/departments',
 	'collections/employees',
+	'views/homeNavigation',
 	'views/launchPage',
 	'views/scanPage',
 	'views/lookUpPage',

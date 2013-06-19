@@ -4,7 +4,7 @@ define([
 	'use strict';
 
 	app.Views.DevicePage = Backbone.View.extend( {
-		el: '.hero-unit',
+		el: '.application',
 
 		template: _.template( $( '#devicePageTemplate' ).html() ),
 

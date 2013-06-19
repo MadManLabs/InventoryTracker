@@ -6,7 +6,7 @@ define([
 	'use strict';
 
 	app.Views.BrowsePage = Backbone.View.extend( {
-		el: '.hero-unit',
+		el: '.application',
 
 		template: _.template( $( '#browsePageTemplate' ).html() ),
 

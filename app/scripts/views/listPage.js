@@ -5,7 +5,7 @@ define([
 	'use strict';
 
 	app.Views.ListPage = Backbone.View.extend( {
-		el: '.hero-unit',
+		el: '.application',
 
 		template: _.template( $( '#listPageTemplate' ).html() ),
 

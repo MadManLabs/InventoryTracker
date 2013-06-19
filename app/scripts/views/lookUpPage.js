@@ -4,7 +4,7 @@ define([
 	'use strict';
 
 	app.Views.LookUpPage = Backbone.View.extend( {
-		el: '.hero-unit',
+		el: '.application',
 
 		template: _.template( $( '#lookUpPageTemplate' ).html() ),
 

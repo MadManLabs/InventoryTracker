@@ -4,7 +4,7 @@ define([
 	'use strict';
 
 	app.Views.LaunchPage = Backbone.View.extend( {
-		el: '.hero-unit',
+		el: '.application',
 
 		template: _.template( $( '#launchPageTemplate' ).html() ),
 
@@ -16,7 +16,7 @@ define([
 
 		render: function() {
 			var data = { cordova: app.cordova };
-			this.$el.html( this.template(data) );
+			this.$el.html( this.template( data ) );
 		},
 
 		scan: function() {

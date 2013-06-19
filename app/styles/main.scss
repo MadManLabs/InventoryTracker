@@ -18,6 +18,17 @@
 	min-height: 480px;
 }
 
+.homeButton {
+	height: 40px;
+	width: 40px;
+	margin: auto;
+	display: block;
+	margin-top: -40px;
+	margin-bottom: 15px;
+	opacity: .5;
+	cursor: pointer;
+}
+
 .launchButtons,
 .browseButtons,
 .listButtons {
@@ -85,4 +96,15 @@
 	font-weight: bold;
 	font-size: .9em;
 	color: hsl(0, 1%, 61%);
+}
+
+.serialInput {
+	margin-top: 70px;
+}
+
+.submitLookUp {
+	margin: 30px 0 0 75px;
+	padding: 10px 40px 10px 40px;
+	font-size: 22px;
+	color: #828282;
 }

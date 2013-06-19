@@ -32,6 +32,7 @@ define([
 		},
 
 		launchApp: function() {
+			app.Views.homeNavigation.render();
 			app.Views.launchPage.render();
 		},
 
@@ -123,11 +124,6 @@ define([
 		},
 
 		initializeStorage: function() {
-			// if (Modernizr.localstorage) {
-
-			// } else {
-
-			// }
 			app.Collections.devices = new app.Collections.Devices([	{ id: 1, device: 'iPhone 4', type: 'phone', owner: 'Chris Butler', serial: 'AE8V43-QR10-A01', assigned: moment('2009-01-01 2:30', 'YYYY-MM-DD HH:mm'), expires: moment('2014-01-01 2:30', 'YYYY-MM-DD HH:mm'), lost: true },
 																	{ id: 2, device: 'iPad 2', type: 'tablet', owner: 'Keith Gibbs', serial: 'BI658D-0RVB-A01', assigned: moment('2010-10-20 4:35', 'YYYY-MM-DD HH:mm'), expires: moment('2015-10-20 4:35', 'YYYY-MM-DD HH:mm'), lost: false },
 																	{ id: 3, device: 'Nexus 10', type: 'tablet', owner: 'David Brown', serial: 'W2333B-DDVD-A01', assigned: moment('2010-4-18 11:00', 'YYYY-MM-DD HH:mm'), expires: moment('2015-4-18  11:00', 'YYYY-MM-DD HH:mm'), lost: false },
@@ -167,6 +163,7 @@ define([
 
 	var initialize = function() {
 		app.Router.router = new Router();
+		app.Views.homeNavigation = app.Views.homeNavigation || new app.Views.HomeNavigation();
 		app.Views.launchPage = app.Views.launchPage || new app.Views.LaunchPage();
 		app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
 		app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();

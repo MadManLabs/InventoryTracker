@@ -17,7 +17,10 @@
 	</head>
 	<body>
 		<div class='container'>
-			<div class='hero-unit'></div>
+			<div class='hero-unit'>
+				<div class='homeNavigation'></div>
+				<div class='application'></div>
+			</div>
 		</div>
 
 		<!--[if lt IE 7]>
@@ -32,6 +35,10 @@
 			s.parentNode.insertBefore(g,s)}(document,'script'));
 		</script-->
 
+		<script id='homeNavigationTemplate' type='text/template'>
+			<img class='homeButton' src='../images/homeIcon.png'>
+		</script>
+
 		<script id='launchPageTemplate' type='text/template'>
 			<div class='launchButtons btn-group btn-group-vertical'>
 				<% if (cordova) { %><button class='scan btn'>Scan</button><% } %>
@@ -41,12 +48,12 @@
 		</script>
 
 		<script id='scanPageTemplate' type='text/template'>
-			Scanning...
+			<span>Scanning...</span>
 		</script>
 
 		<script id='lookUpPageTemplate' type='text/template'>
 			<div class='pull-right'>
-				<input type="text" class="span5" placeholder="Enter device number">
+				<input type="text" class="serialInput span4" placeholder="Enter device number">
 				<button class="submitLookUp btn">Look Up</button>
 			</div>
 		</script>

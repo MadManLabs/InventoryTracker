@@ -1,8 +1,12 @@
 define([
-	'backbone',
+	'app',
 	'models/employee'
-], function( Backbone ) {
+], function( app ) {
+	'use strict';
+
 	app.Collections.Employees = Backbone.Collection.extend ({
 		model: app.Models.Employee
 	});
+
+	return app.Collections.Employees;
 });

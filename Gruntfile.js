@@ -18,7 +18,7 @@ module.exports = function (grunt) {
     // configurable paths
     var yeomanConfig = {
         app: 'app',
-        dist: 'dist'
+        dist: 'www'
     };
 
     grunt.initConfig({
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
                 options: {
                     middleware: function (connect) {
                         return [
-                            mountFolder(connect, 'dist')
+                            mountFolder(connect, 'www')
                         ];
                     }
                 }
@@ -95,7 +95,17 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            dist: ['.tmp', '<%= yeoman.dist %>/*'],
+            dist: {
+                files: [{
+                    dot: true,
+                    src: [
+                        '.tmp',
+                        '<%= yeoman.dist %>/*',
+                        '!<%= yeoman.dist %>/config.xml',
+                        '!<%= yeoman.dist %>/.git*'
+                    ]
+                }]
+            },
             server: '.tmp'
         },
         jshint: {
@@ -165,6 +175,11 @@ module.exports = function (grunt) {
                     paths: {
                         'templates': '../../.tmp/scripts/templates'
                     },
+                    almond: true,
+                    replaceRequireScript: [{
+                        files: ['<%= yeoman.dist %>/index.html'],
+                        module: 'main'
+                    }],
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
                     // https://github.com/yeoman/grunt-usemin/issues/30
                     //generateSourceMaps: true,
@@ -260,6 +275,11 @@ module.exports = function (grunt) {
                     '.tmp/scripts/templates.js': ['<%= yeoman.app %>/scripts/templates/*.ejs']
                 }
             }
+        },
+        shell: {
+            cordova_build_ios: {
+                command: 'cordova build ios'
+            }
         }
     });
 
@@ -287,6 +307,8 @@ module.exports = function (grunt) {
         ]);
     });
 
+    grunt.registerTask('lint', ['jshint']);
+
     grunt.registerTask('test', [
         'clean:server',
         'coffee',
@@ -304,14 +326,19 @@ module.exports = function (grunt) {
         'jst',
         'compass:dist',
         'useminPrepare',
+        'htmlmin',
         'requirejs',
         'imagemin',
-        'htmlmin',
         'concat',
         'cssmin',
         'uglify',
         'copy',
         'usemin'
+    ]);
+
+    grunt.registerTask('ios', [
+        'build',
+        'shell:cordova_build_ios'
     ]);
 
     grunt.registerTask('default', [

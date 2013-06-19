@@ -1,10 +1,10 @@
-'use strict';
-
 define([
-	'backbone',
+	'app',
 	'collections/devices',
 	'collections/departments'
-], function( Backbone ) {
+], function( app ) {
+	'use strict';
+
 	app.Views.BrowsePage = Backbone.View.extend( {
 		el: '.hero-unit',
 
@@ -27,5 +27,7 @@ define([
 			app.Router.router.navigate( 'list/departments', { trigger: true });
 		}
 	});
+
+	return app.Views.BrowsePage;
 });
 

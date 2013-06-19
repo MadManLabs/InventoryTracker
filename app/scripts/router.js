@@ -1,18 +1,19 @@
-'use strict';
-
 define([
-	'backbone',
+	'app',
+	'moment',
 	'collections/devices',
 	'collections/departments',
 	'views/launchPage',
 	'views/scanPage',
 	'views/lookUpPage',
 	'views/browsePage'
-], function( Backbone ) {
-	app.Router.Router = Backbone.Router.extend( {
+], function( app, moment ) {
+	'use strict';
+
+	var Router = Backbone.Router.extend( {
 
 		routes: {
-			''								: 'default',
+			''								: 'defaultRoute',
 			'launch'						: 'launchApp',
 			'scan'							: 'launchScan',
 			'lookUp'						: 'launchLookUp',
@@ -26,16 +27,7 @@ define([
 			'device/:serial'				: 'showDevice'
 		},
 
-		initialize: function() {
-			app.Views.launchPage = app.Views.launchPage || new app.Views.LaunchPage();
-			app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
-			app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();
-			app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
-			app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
-			app.Views.devicePage = app.Views.devicePage || new app.Views.DevicePage();
-		},
-
-		default: function() {
+		defaultRoute: function() {
 			this.navigate( 'launch', { trigger: true });
 		},
 
@@ -131,11 +123,11 @@ define([
 		},
 
 		initializeStorage: function() {
-			if (Modernizr.localstorage) {
+			// if (Modernizr.localstorage) {
 
-			} else {
+			// } else {
 
-			}
+			// }
 			app.Collections.devices = new app.Collections.Devices([	{ id: 1, device: 'iPhone 4', type: 'phone', owner: 'Chris Butler', serial: 'AE8V43-QR10-A01', assigned: moment('2009-01-01 2:30', 'YYYY-MM-DD HH:mm'), expires: moment('2014-01-01 2:30', 'YYYY-MM-DD HH:mm'), lost: true },
 																	{ id: 2, device: 'iPad 2', type: 'tablet', owner: 'Keith Gibbs', serial: 'BI658D-0RVB-A01', assigned: moment('2010-10-20 4:35', 'YYYY-MM-DD HH:mm'), expires: moment('2015-10-20 4:35', 'YYYY-MM-DD HH:mm'), lost: false },
 																	{ id: 3, device: 'Nexus 10', type: 'tablet', owner: 'David Brown', serial: 'W2333B-DDVD-A01', assigned: moment('2010-4-18 11:00', 'YYYY-MM-DD HH:mm'), expires: moment('2015-4-18  11:00', 'YYYY-MM-DD HH:mm'), lost: false },
@@ -172,4 +164,19 @@ define([
 																		{ id: 9, name: 'Amy Chan', department: 'Sup and Reg' } ]);
 		}
 	});
+
+	var initialize = function() {
+		app.Router.router = new Router();
+		app.Views.launchPage = app.Views.launchPage || new app.Views.LaunchPage();
+		app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
+		app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();
+		app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
+		app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
+		app.Views.devicePage = app.Views.devicePage || new app.Views.DevicePage();
+		Backbone.history.start();
+		app.Router.router.initializeStorage();
+		return app.Router.router;
+	};
+
+	return {initialize: initialize};
 });

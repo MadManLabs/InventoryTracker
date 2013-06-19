@@ -1,0 +1,838 @@
+TInventoryScanner
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Info.plist InventoryScanner/InventoryScanner-Info.plist
+cPhaseScriptExecution "Copy www directory" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Script-304B58A110DAC018002A0835.sh
+cCpResource InventoryScanner/config.xml build/InventoryScanner.app/config.xml
+cCpResource InventoryScanner/Resources/icons/icon-72.png build/InventoryScanner.app/icon-72.png
+cCpResource InventoryScanner/Resources/icons/icon.png build/InventoryScanner.app/icon.png
+cCpResource InventoryScanner/Resources/icons/icon@2x.png build/InventoryScanner.app/icon@2x.png
+cCpResource InventoryScanner/Resources/Capture.bundle build/InventoryScanner.app/Capture.bundle
+cCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/en.lproj/Localizable.strings InventoryScanner/Resources/en.lproj/Localizable.strings
+cCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/es.lproj/Localizable.strings InventoryScanner/Resources/es.lproj/Localizable.strings
+cCompileXIB /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib
+cCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/de.lproj/Localizable.strings InventoryScanner/Resources/de.lproj/Localizable.strings
+cCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/se.lproj/Localizable.strings InventoryScanner/Resources/se.lproj/Localizable.strings
+cCpResource InventoryScanner/Resources/splash/Default-Landscape@2x~ipad.png build/InventoryScanner.app/Default-Landscape@2x~ipad.png
+cCpResource InventoryScanner/Resources/splash/Default-Landscape~ipad.png build/InventoryScanner.app/Default-Landscape~ipad.png
+cCpResource InventoryScanner/Resources/splash/Default-Portrait@2x~ipad.png build/InventoryScanner.app/Default-Portrait@2x~ipad.png
+cCpResource InventoryScanner/Resources/splash/Default-Portrait~ipad.png build/InventoryScanner.app/Default-Portrait~ipad.png
+cCpResource InventoryScanner/Resources/splash/Default@2x~iphone.png build/InventoryScanner.app/Default@2x~iphone.png
+cCpResource InventoryScanner/Resources/splash/Default~iphone.png build/InventoryScanner.app/Default~iphone.png
+cCpResource InventoryScanner/Resources/splash/Default-568h@2x~iphone.png build/InventoryScanner.app/Default-568h@2x~iphone.png
+cCpResource InventoryScanner/Resources/icons/icon-72@2x.png build/InventoryScanner.app/icon-72@2x.png
+cCompileXIB /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib
+cProcessPCH++ /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner normal i386
+cGenerateDSYMFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner
+cTouch /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c000000005102E2D30000000000000110
+t1359143635
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000512CF3AB00000000001EB540
+t1361900459
+s2012480
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c00000000512CF3AA00000000000C1030
+t1361900458
+s790576
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c00000000512CF3AB0000000000193640
+t1361900459
+s1652288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c00000000512CF3AB00000000000226E0
+t1361900459
+s141024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000512CF3AB00000000003D4DF0
+t1361900459
+s4017648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000512CF3AB0000000000215DB0
+t1361900459
+s2186672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000512CF3AC0000000000228FE0
+t1361900460
+s2265056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c00000000512CF3AC000000000009C590
+t1361900460
+s640400
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c00000000512CF3AC0000000000085620
+t1361900460
+s546336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000512CF3AD0000000000020F20
+t1361900461
+s134944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000512CF3AE00000000003DDFA0
+t1361900462
+s4054944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c00000000512CF3B000000000002DBA50
+t1361900464
+s2996816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000512CF3B100000000000BCC20
+t1361900465
+s773152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000512CF3B200000000001D5750
+t1361900466
+s1922896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000512CF3B3000000000006CC50
+t1361900467
+s445520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000512CF3B50000000000AB6230
+t1361900469
+s11231792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/lib/libiconv.dylib
+c00000000512CF3C800000000000FFFF0
+t1361900488
+s1048560
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.h
+c0000000051C0686500000000000005C5
+t1371564133
+s1477
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.m
+c0000000051C18E7E00000000000013E8
+t1371639422
+s5096
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.h
+c0000000051C0686500000000000004D6
+t1371564133
+s1238
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.m
+c0000000051C068650000000000001271
+t1371564133
+s4721
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib
+c0000000051C068640000000000001759
+t1371564132
+s5977
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib
+c0000000051C1C6690000000000001FF9
+t1371653737
+s8185
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch
+c0000000051C0686500000000000003D1
+t1371564133
+s977
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mm
+c0000000051B7AF9800000000000088E1
+t1370992536
+s35041
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp
+c0000000051B7AF98000000000006213E
+t1370992536
+s401726
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.h
+c0000000051B7AF98000000000002278E
+t1370992536
+s141198
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/BarcodeOverlay.xib
+c0000000051C1C4EF000000000000286E
+t1371653359
+s10350
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/Capture.bundle
+c0000000051C06865000000000000030E
+t1371564133
+s782
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/de.lproj/Localizable.strings
+c0000000051C068650000000000000485
+t1371564133
+s1157
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/en.lproj/Localizable.strings
+c0000000051C068650000000000000470
+t1371564133
+s1136
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/es.lproj/Localizable.strings
+c0000000051C06865000000000000047D
+t1371564133
+s1149
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon-72.png
+c0000000051C068650000000000001350
+t1371564133
+s4944
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon-72@2x.png
+c0000000051C068650000000000002DBA
+t1371564133
+s11706
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon.png
+c0000000051C068650000000000000F3E
+t1371564133
+s3902
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon@2x.png
+c0000000051C068650000000000001EBD
+t1371564133
+s7869
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/se.lproj/Localizable.strings
+c0000000051C068650000000000000471
+t1371564133
+s1137
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-568h@2x~iphone.png
+c0000000051C0686500000000000085B1
+t1371564133
+s34225
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Landscape@2x~ipad.png
+c0000000051C068650000000000012DF4
+t1371564133
+s77300
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Landscape~ipad.png
+c0000000051C068650000000000008877
+t1371564133
+s34935
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Portrait@2x~ipad.png
+c0000000051C068650000000000012B02
+t1371564133
+s76546
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Portrait~ipad.png
+c0000000051C0686500000000000085E6
+t1371564133
+s34278
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default@2x~iphone.png
+c0000000051C068650000000000007323
+t1371564133
+s29475
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default~iphone.png
+c0000000051C06865000000000000289A
+t1371564133
+s10394
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/config.xml
+c0000000051C1D97F00000000000008B2
+t1371658623
+s2226
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m
+c0000000051C068650000000000000462
+t1371564133
+s1122
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/BarcodeOverlay.nib
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Capture.bundle
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-568h@2x~iphone.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Landscape@2x~ipad.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Landscape~ipad.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Portrait@2x~ipad.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Portrait~ipad.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default@2x~iphone.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default~iphone.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Info.plist
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/MainViewController.nib
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/PkgInfo
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/config.xml
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/de.lproj/Localizable.strings
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/en.lproj/Localizable.strings
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/es.lproj/Localizable.strings
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon-72.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon-72@2x.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon@2x.png
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/scannerOverlay.nib
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/se.lproj/Localizable.strings
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.o
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/InventoryScanner.LinkFileList
+c0000000051C1D98C0000000000000362
+t1371658636
+s866
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.o
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.o
+t2
+s0
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Script-304B58A110DAC018002A0835.sh
+c0000000051C1D98C000000000000051A
+t1371658636
+s1306
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVAvailability.h
+c0000000051C1D4620000000000000C0B
+t1371657314
+s3083
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVCommandDelegate.h
+c0000000051C1D46200000000000008BA
+t1371657314
+s2234
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVCommandDelegateImpl.h
+c0000000051C1D4620000000000000473
+t1371657314
+s1139
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVCommandQueue.h
+c0000000051C1D4620000000000000501
+t1371657314
+s1281
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVInvokedUrlCommand.h
+c0000000051C1D4620000000000000906
+t1371657314
+s2310
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVPlugin.h
+c0000000051C1D4620000000000000892
+t1371657314
+s2194
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVPluginResult.h
+c0000000051C1D4620000000000000C13
+t1371657314
+s3091
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVScreenOrientationDelegate.h
+c0000000051C1D4620000000000000408
+t1371657314
+s1032
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVViewController.h
+c0000000051C1D4620000000000000B67
+t1371657314
+s2919
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/CDVWhitelist.h
+c0000000051C1D4620000000000000476
+t1371657314
+s1142
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include/Cordova/NSMutableArray+QueueAdditions.h
+c0000000051C1D46200000000000003A0
+t1371657314
+s928
+
+N/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/libCordova.a
+c0000000051C1D98C0000000000362408
+t1371658636
+s3548168
+
+N/var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.pth
+t2
+s0
+
+NInventoryScanner/InventoryScanner-Info.plist
+c0000000051C1D97E0000000000000749
+t1371658622
+s1865
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7ec7800c1172b741^3e93890c1172b741^---0#1#0#--18"Check dependencies36"74C56F5A-C68E-4FBF-BE3E-8F3417F1E997-
+
+CCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s393351444.370676
+e393351444.555505
+r1
+xCompileC
+xbuild/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.o
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.mcb145f141172b741^3f358e141172b741^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.m0000000000000000^4100"CompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.o InventoryScanner/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -include /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch -MMD -MT dependencies -MF /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/AppDelegate.m -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/AppDelegate.o36"067E316A-0895-47E8-B1B5-E55D9F069DA5-
+
+CCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s393351443.950344
+e393351445.217604
+r1
+xCompileC
+xbuild/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.o
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mmf486f3131172b741^9ab637151172b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mm0000000000000000^4260"CompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.o InventoryScanner/Plugins/CDVBarcodeScanner.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -include /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch -MMD -MT dependencies -MF /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.d --serialize-diagnostics /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/CDVBarcodeScanner.mm -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/CDVBarcodeScanner.o36"92B6440B-A476-4D93-9EA7-735957AD0145-
+
+CCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s393351444.370680
+e393351444.554126
+r1
+xCompileC
+xbuild/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.o
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.mb5155f141172b741^87db8d141172b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.m0000000000000000^4142"CompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.o InventoryScanner/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -include /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch -MMD -MT dependencies -MF /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.m -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/MainViewController.o36"D2BA53DE-390A-4D6D-9D0C-8DD38FB1D5E8-
+
+CCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s393351444.370270
+e393351444.506891
+r1
+xCompileC
+xbuild/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.o
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m60065f141172b741^c5c581141172b741^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m0000000000000000^4042"CompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.o InventoryScanner/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -include /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch -MMD -MT dependencies -MF /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/main.m -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/main.o36"4E5FEBC9-6CBF-4210-B017-CD39B03A2800-
+
+CCompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s393351443.540272
+e393351447.230821
+r1
+xCompileC
+xbuild/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.o
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:1943:75: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+o    throw IllegalArgumentException("Requested row is outside the image: " + y);
+o                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+o/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:1943:75: note: use array indexing to silence this warning
+o    throw IllegalArgumentException("Requested row is outside the image: " + y);
+o                                                                          ^
+o                                   &                                      [  ]
+o/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:2020:75: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+o    throw IllegalArgumentException("Requested row is outside the image: " + y);
+o                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+o/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:2020:75: note: use array indexing to silence this warning
+o    throw IllegalArgumentException("Requested row is outside the image: " + y);
+o                                                                          ^
+o                                   &                                      [  ]
+o/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:10312:71: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+o    throw IllegalArgumentException("Bad ECI bits starting with byte " + firstByte);
+o                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+o/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:10312:71: note: use array indexing to silence this warning
+o    throw IllegalArgumentException("Bad ECI bits starting with byte " + firstByte);
+o                                                                      ^
+o                                   &                                  [          ]
+o3 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cppd2708a131172b741^1a163b171172b741^-2322"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:1943:75: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]    throw IllegalArgumentException("Requested row is outside the image: " + y);                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:1943:75: note: use array indexing to silence this warning    throw IllegalArgumentException("Requested row is outside the image: " + y);                                                                          ^                                   &                                      [  ]/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:2020:75: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]    throw IllegalArgumentException("Requested row is outside the image: " + y);                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:2020:75: note: use array indexing to silence this warning    throw IllegalArgumentException("Requested row is outside the image: " + y);                                                                          ^                                   &                                      [  ]/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:10312:71: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]    throw IllegalArgumentException("Bad ECI bits starting with byte " + firstByte);                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp:10312:71: note: use array indexing to silence this warning    throw IllegalArgumentException("Bad ECI bits starting with byte " + firstByte);                                                                      ^                                   &                                  [          ]3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@54"Adding 'int' to a string does not append to the string-393351447#18446744073709551615#0#1(2@42"Use array indexing to silence this warning-393351447#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^1942#74#1942#74#57092#0#14"Semantic Issue3(3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^1942#35#1942#35#57053#0#3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^1942#74#1942#75#57092#1#3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^1942#77#1942#77#57095#0#-1#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^1942#74#1942#74#57092#0#14"Semantic Issue1(3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^1942#35#1942#77#57053#41#-2@54"Adding 'int' to a string does not append to the string-393351447#18446744073709551615#0#1(2@42"Use array indexing to silence this warning-393351447#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^2019#74#2019#74#59969#0#14"Semantic Issue3(3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^2019#35#2019#35#59930#0#3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^2019#74#2019#75#59969#1#3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^2019#77#2019#77#59972#0#-1#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^2019#74#2019#74#59969#0#14"Semantic Issue1(3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^2019#35#2019#77#59930#41#-2@54"Adding 'int' to a string does not append to the string-393351447#18446744073709551615#0#1(2@42"Use array indexing to silence this warning-393351447#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^10311#70#10311#70#344041#0#14"Semantic Issue3(3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^10311#35#10311#35#344006#0#3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^10311#70#10311#71#344041#1#3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^10311#81#10311#81#344052#0#-1#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^10311#70#10311#70#344041#0#14"Semantic Issue1(3@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^10311#35#10311#81#344006#37#-0#0#0#-19%DVTDocumentLocation4@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp0000000000000000^4004"CompileC build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.o InventoryScanner/Plugins/zxing-all-in-one.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -include /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch -MMD -MT dependencies -MF /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.d --serialize-diagnostics /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Plugins/zxing-all-in-one.cpp -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/zxing-all-in-one.o36"2A37336A-7DF0-4AD6-8CCE-D677D552C519-
+
+CCompileXIB /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib
+s393351436.703709
+e393351443.487421
+r1
+xCompileXIB
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib
+o2013-06-19 12:17:22.928 Interface Builder Cocoa Touch Tool[14624:14603] CFPreferences: user home directory at file://localhost/Users/a1kjg01/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Compiling /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib904fb40c1172b741^43c97c131172b741^-242"2013-06-19 12:17:22.928 Interface Builder Cocoa Touch Tool[14624:14603] CFPreferences: user home directory at file://localhost/Users/a1kjg01/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib0000000000000000^1133"CompileXIB InventoryScanner/Classes/MainViewController.xib    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/MainViewController.nib /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/MainViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"6709616F-F0B3-4075-8DEB-6C31862EF618-
+
+CCompileXIB /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib
+s393351436.809455
+e393351443.493603
+r1
+xCompileXIB
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib
+o2013-06-19 12:17:22.937 Interface Builder Cocoa Touch Tool[14623:14603] CFPreferences: user home directory at file://localhost/Users/a1kjg01/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compiling /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib344acf0c1172b741^b35c7e131172b741^-242"2013-06-19 12:17:22.937 Interface Builder Cocoa Touch Tool[14623:14603] CFPreferences: user home directory at file://localhost/Users/a1kjg01/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib0000000000000000^1121"CompileXIB InventoryScanner/Classes/scannerOverlay.xib    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/scannerOverlay.nib /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Classes/scannerOverlay.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"2669C777-B2E4-45A3-938F-24BC0D38038E-
+
+CCompileXIB /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/BarcodeOverlay.xib
+s393346240.205784
+e393346240.975639
+r1
+xCompileXIB
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/BarcodeOverlay.xib
+o2013-06-19 10:50:40.890 Interface Builder Cocoa Touch Tool[28841:14603] CFPreferences: user home directory at file://localhost/Users/a1kjg01/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compiling /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/BarcodeOverlay.xibc8cd34c0fc71b741^87c4f9c0fc71b741^-242"2013-06-19 10:50:40.890 Interface Builder Cocoa Touch Tool[28841:14603] CFPreferences: user home directory at file://localhost/Users/a1kjg01/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/BarcodeOverlay.xib0000000000000000^1125"CompileXIB InventoryScanner/Resources/BarcodeOverlay.xib    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/BarcodeOverlay.nib /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/BarcodeOverlay.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"3DF5AC10-6172-494C-AC83-7715871F4192-
+
+CCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/de.lproj/Localizable.strings InventoryScanner/Resources/de.lproj/Localizable.strings
+s393351436.746087
+e393351436.778327
+r1
+xCopyStringsFile
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/de.lproj/Localizable.strings
+xInventoryScanner/Resources/de.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy InventoryScanner/Resources/de.lproj/Localizable.strings5c1ebf0c1172b741^1841c70c1172b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/de.lproj/Localizable.strings0000000000000000^782"CopyStringsFile build/InventoryScanner.app/de.lproj/Localizable.strings InventoryScanner/Resources/de.lproj/Localizable.strings    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/de.lproj -- InventoryScanner/Resources/de.lproj/Localizable.strings36"9E5337E9-35C5-4B51-8908-A255055D0E8B-
+
+CCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/en.lproj/Localizable.strings InventoryScanner/Resources/en.lproj/Localizable.strings
+s393351436.703279
+e393351436.778356
+r1
+xCopyStringsFile
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/en.lproj/Localizable.strings
+xInventoryScanner/Resources/en.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy InventoryScanner/Resources/en.lproj/Localizable.stringsdc2ab40c1172b741^d444c70c1172b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/en.lproj/Localizable.strings0000000000000000^782"CopyStringsFile build/InventoryScanner.app/en.lproj/Localizable.strings InventoryScanner/Resources/en.lproj/Localizable.strings    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/en.lproj -- InventoryScanner/Resources/en.lproj/Localizable.strings36"E4910D02-EA21-4235-A329-B450AEB7B851-
+
+CCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/es.lproj/Localizable.strings InventoryScanner/Resources/es.lproj/Localizable.strings
+s393351436.703593
+e393351436.778652
+r1
+xCopyStringsFile
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/es.lproj/Localizable.strings
+xInventoryScanner/Resources/es.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy InventoryScanner/Resources/es.lproj/Localizable.strings0550b40c1172b741^6556c70c1172b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/es.lproj/Localizable.strings0000000000000000^782"CopyStringsFile build/InventoryScanner.app/es.lproj/Localizable.strings InventoryScanner/Resources/es.lproj/Localizable.strings    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/es.lproj -- InventoryScanner/Resources/es.lproj/Localizable.strings36"54D8786C-5237-4C51-BDF4-6B10CCDF2749-
+
+CCopyStringsFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/se.lproj/Localizable.strings InventoryScanner/Resources/se.lproj/Localizable.strings
+s393351436.746099
+e393351436.779315
+r1
+xCopyStringsFile
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/se.lproj/Localizable.strings
+xInventoryScanner/Resources/se.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy InventoryScanner/Resources/se.lproj/Localizable.stringsf71dbf0c1172b741^8481c70c1172b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/se.lproj/Localizable.strings0000000000000000^782"CopyStringsFile build/InventoryScanner.app/se.lproj/Localizable.strings InventoryScanner/Resources/se.lproj/Localizable.strings    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/se.lproj -- InventoryScanner/Resources/se.lproj/Localizable.strings36"DF500D93-A47F-452B-9345-75941241B03B-
+
+CCpResource InventoryScanner/Resources/Capture.bundle build/InventoryScanner.app/Capture.bundle
+s393351436.702845
+e393351438.637155
+r1
+xCpResource
+xInventoryScanner/Resources/Capture.bundle
+xbuild/InventoryScanner.app/Capture.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/InventoryScanner.app/Capture.bundlee202b40c1172b741^711da30e1172b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Capture.bundle000000000080d041^808"CpResource InventoryScanner/Resources/Capture.bundle build/InventoryScanner.app/Capture.bundle    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/Capture.bundle /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"55D3EAB7-9E08-466E-AD9C-4693ABDA4D67-
+
+CCpResource InventoryScanner/Resources/icons/icon-72.png build/InventoryScanner.app/icon-72.png
+s393351436.702392
+e393351436.744822
+r1
+xCpResource
+xInventoryScanner/Resources/icons/icon-72.png
+xbuild/InventoryScanner.app/icon-72.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy build/InventoryScanner.app/icon-72.png36e4b30c1172b741^daacbe0c1172b741^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon-72.png000000000080d041^811"CpResource InventoryScanner/Resources/icons/icon-72.png build/InventoryScanner.app/icon-72.png    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon-72.png /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"F530F4A3-92D1-402F-9A9C-9F4EAB2E041D-
+
+CCpResource InventoryScanner/Resources/icons/icon-72@2x.png build/InventoryScanner.app/icon-72@2x.png
+s393351436.796439
+e393351436.820831
+r1
+xCpResource
+xInventoryScanner/Resources/icons/icon-72@2x.png
+xbuild/InventoryScanner.app/icon-72@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/InventoryScanner.app/icon-72@2x.pngbff3cb0c1172b741^4624d20c1172b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon-72@2x.png000000000080d041^826"CpResource "InventoryScanner/Resources/icons/icon-72@2x.png" "build/InventoryScanner.app/icon-72@2x.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon-72@2x.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"84DEB5C5-C5CD-41C5-B0F4-B46430054E58-
+
+CCpResource InventoryScanner/Resources/icons/icon.png build/InventoryScanner.app/icon.png
+s393351436.702397
+e393351436.758351
+r1
+xCpResource
+xInventoryScanner/Resources/icons/icon.png
+xbuild/InventoryScanner.app/icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy build/InventoryScanner.app/icon.png2ae3b30c1172b741^d123c20c1172b741^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon.png000000000080d041^802"CpResource InventoryScanner/Resources/icons/icon.png build/InventoryScanner.app/icon.png    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon.png /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"D1EEEB2C-EF13-434A-ADF0-E2ABFA0EF1A6-
+
+CCpResource InventoryScanner/Resources/icons/icon@2x.png build/InventoryScanner.app/icon@2x.png
+s393351436.702830
+e393351436.762759
+r1
+xCpResource
+xInventoryScanner/Resources/icons/icon@2x.png
+xbuild/InventoryScanner.app/icon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy build/InventoryScanner.app/icon@2x.pngf701b40c1172b741^c344c30c1172b741^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/icon@2x.png000000000080d041^817"CpResource "InventoryScanner/Resources/icons/icon@2x.png" "build/InventoryScanner.app/icon@2x.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/icons/icon@2x.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"322C416F-0F8F-487D-9B8D-7954D8386047-
+
+CCpResource InventoryScanner/Resources/splash/Default-568h@2x~iphone.png build/InventoryScanner.app/Default-568h@2x~iphone.png
+s393351436.796173
+e393351436.821450
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default-568h@2x~iphone.png
+xbuild/InventoryScanner.app/Default-568h@2x~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/InventoryScanner.app/Default-568h@2x~iphone.png50e2cb0c1172b741^f94cd20c1172b741^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-568h@2x~iphone.png000000000080d041^864"CpResource "InventoryScanner/Resources/splash/Default-568h@2x~iphone.png" "build/InventoryScanner.app/Default-568h@2x~iphone.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-568h@2x~iphone.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"DEFF03FA-0716-4D49-A6D5-315C25539CCD-
+
+CCpResource InventoryScanner/Resources/splash/Default-Landscape@2x~ipad.png build/InventoryScanner.app/Default-Landscape@2x~ipad.png
+s393351436.759714
+e393351436.795156
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default-Landscape@2x~ipad.png
+xbuild/InventoryScanner.app/Default-Landscape@2x~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/InventoryScanner.app/Default-Landscape@2x~ipad.png7994c20c1172b741^ac8fcb0c1172b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Landscape@2x~ipad.png000000000080d041^873"CpResource "InventoryScanner/Resources/splash/Default-Landscape@2x~ipad.png" "build/InventoryScanner.app/Default-Landscape@2x~ipad.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Landscape@2x~ipad.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"CEDE7A47-2F04-4FF5-B023-8A287945EDC0-
+
+CCpResource InventoryScanner/Resources/splash/Default-Landscape~ipad.png build/InventoryScanner.app/Default-Landscape~ipad.png
+s393351436.764050
+e393351436.794930
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default-Landscape~ipad.png
+xbuild/InventoryScanner.app/Default-Landscape~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/InventoryScanner.app/Default-Landscape~ipad.pngcdaec30c1172b741^5281cb0c1172b741^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Landscape~ipad.png000000000080d041^864"CpResource "InventoryScanner/Resources/splash/Default-Landscape~ipad.png" "build/InventoryScanner.app/Default-Landscape~ipad.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Landscape~ipad.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"CCAF76A9-7FBB-48F7-A491-2E7FB01900A6-
+
+CCpResource InventoryScanner/Resources/splash/Default-Portrait@2x~ipad.png build/InventoryScanner.app/Default-Portrait@2x~ipad.png
+s393351436.779437
+e393351436.808283
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default-Portrait@2x~ipad.png
+xbuild/InventoryScanner.app/Default-Portrait@2x~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/InventoryScanner.app/Default-Portrait@2x~ipad.png0b99c70c1172b741^e9eece0c1172b741^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Portrait@2x~ipad.png000000000080d041^870"CpResource "InventoryScanner/Resources/splash/Default-Portrait@2x~ipad.png" "build/InventoryScanner.app/Default-Portrait@2x~ipad.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Portrait@2x~ipad.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"14726840-8890-45C2-BE44-53492A098B98-
+
+CCpResource InventoryScanner/Resources/splash/Default-Portrait~ipad.png build/InventoryScanner.app/Default-Portrait~ipad.png
+s393351436.779807
+e393351436.808276
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default-Portrait~ipad.png
+xbuild/InventoryScanner.app/Default-Portrait~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/InventoryScanner.app/Default-Portrait~ipad.png75afc70c1172b741^5febce0c1172b741^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default-Portrait~ipad.png000000000080d041^861"CpResource "InventoryScanner/Resources/splash/Default-Portrait~ipad.png" "build/InventoryScanner.app/Default-Portrait~ipad.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default-Portrait~ipad.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"26C9A2BF-211C-4072-AA24-2F7432B8B8FE-
+
+CCpResource InventoryScanner/Resources/splash/Default@2x~iphone.png build/InventoryScanner.app/Default@2x~iphone.png
+s393351436.779818
+e393351436.809036
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default@2x~iphone.png
+xbuild/InventoryScanner.app/Default@2x~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/InventoryScanner.app/Default@2x~iphone.png07b1c70c1172b741^821dcf0c1172b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default@2x~iphone.png000000000080d041^849"CpResource "InventoryScanner/Resources/splash/Default@2x~iphone.png" "build/InventoryScanner.app/Default@2x~iphone.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default@2x~iphone.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"4B1C371F-FC17-485C-8361-AF10CB816DC8-
+
+CCpResource InventoryScanner/Resources/splash/Default~iphone.png build/InventoryScanner.app/Default~iphone.png
+s393351436.781149
+e393351436.809051
+r1
+xCpResource
+xInventoryScanner/Resources/splash/Default~iphone.png
+xbuild/InventoryScanner.app/Default~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/InventoryScanner.app/Default~iphone.pngcc07c80c1172b741^581fcf0c1172b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Default~iphone.png000000000080d041^840"CpResource "InventoryScanner/Resources/splash/Default~iphone.png" "build/InventoryScanner.app/Default~iphone.png"    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/Resources/splash/Default~iphone.png" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"3F01BABA-F46C-4B74-96F5-F24666E15235-
+
+CCpResource InventoryScanner/config.xml build/InventoryScanner.app/config.xml
+s393351436.702383
+e393351436.745277
+r1
+xCpResource
+xInventoryScanner/config.xml
+xbuild/InventoryScanner.app/config.xml
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Copy build/InventoryScanner.app/config.xmlcde4b30c1172b741^96cbbe0c1172b741^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/config.xml000000000080d041^776"CpResource InventoryScanner/config.xml build/InventoryScanner.app/config.xml    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/config.xml /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"F76F54EE-9CBE-4FBA-9FD3-E625FE5765D1-
+
+CGenerateDSYMFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner
+s393351448.904838
+e393351449.185726
+r1
+xGenerateDSYMFile
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Generate /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM07b5e7181172b741^0d8d2f191172b741^---0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM000000000080d041^804"GenerateDSYMFile build/InventoryScanner.app.dSYM build/InventoryScanner.app/InventoryScanner    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app.dSYM36"5EDE4430-9896-481B-B2FF-B1D91DD15A0B-
+
+CLd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner normal i386
+s393351447.238493
+e393351448.897394
+r1
+xLd
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Link /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScannerb7263d171172b741^cbbce5181172b741^---0#0#0#--1932"Ld build/InventoryScanner.app/InventoryScanner normal i386    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -filelist /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/InventoryScanner.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -liconv -framework CoreVideo -framework AssetsLibrary /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/libCordova.a -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -weak_framework AVFoundation -framework CFNetwork -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -weak_framework CoreMedia -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/InventoryScanner36"38A38CED-9E2C-4B7D-B27F-41735894040B-
+
+CPhaseScriptExecution "Copy www directory" /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Script-304B58A110DAC018002A0835.sh
+s393351436.556663
+e393351436.694439
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.124s
+ouser	0m0.010s
+osys	0m0.024s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'8b178f0c1172b741^15c7b10c1172b741^-42"real	0m0.124suser	0m0.010ssys	0m0.024s3(21%IDEActivityLogMessage2@14"real	0m0.124s-393351436#1#14#-0#-----2@14"user	0m0.010s-393351436#15#14#-0#-----2@13"sys	0m0.024s-393351436#29#13#-0#-----0#0#0#--22153"PhaseScriptExecution "Copy www directory" build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Script-304B58A110DAC018002A0835.sh    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv ACTION build    setenv ALTERNATE_GROUP 1575250376    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER a1kjg01    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv BUILD_ROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv CACHE_ROOT /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991    setenv CCHROOT /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC NO    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv CONFIGURATION_TEMP_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH InventoryScanner.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH InventoryScanner.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/InventoryScanner.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME InventoryScanner.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH InventoryScanner.app/Executables    setenv EXECUTABLE_FOLDER_PATH InventoryScanner.app    setenv EXECUTABLE_NAME InventoryScanner    setenv EXECUTABLE_PATH InventoryScanner.app/InventoryScanner    setenv FILE_LIST /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH InventoryScanner.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME InventoryScanner.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER InventoryScanner/InventoryScanner-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 1575250376    setenv GROUP 1575250376    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include\" \"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include\" \"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include\" \"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE InventoryScanner/InventoryScanner-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH InventoryScanner.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH InventoryScanner.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/InventoryScanner.dst/Applications    setenv INSTALL_GROUP 1575250376    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER a1kjg01    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/InventoryScanner.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH InventoryScanner.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal/i386/InventoryScanner.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH InventoryScanner.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11G63b    setenv MAC_OS_X_VERSION_ACTUAL 1075    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0705    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Objects-normal    setenv OBJROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools:/Users/a1kjg01/SDK/android/sdk/platform-tools:/Users/a1kjg01/SDK/air/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH InventoryScanner.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "objective-c c++ objective-c++"    setenv PKGINFO_FILE_PATH /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/PkgInfo    setenv PKGINFO_PATH InventoryScanner.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 10B141    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH InventoryScanner.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH InventoryScanner.app/PrivateHeaders    setenv PRODUCT_NAME InventoryScanner    setenv PRODUCT_SETTINGS_PATH /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT InventoryScanner    setenv PROJECT_DERIVED_FILE_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/DerivedSources    setenv PROJECT_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PROJECT_FILE_PATH /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner.xcodeproj    setenv PROJECT_NAME InventoryScanner    setenv PROJECT_TEMP_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build    setenv PROJECT_TEMP_ROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv PUBLIC_HEADERS_FOLDER_PATH InventoryScanner.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH InventoryScanner.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_NAME iphonesimulator6.1    setenv SDK_PRODUCT_BUILD_VERSION 10B141    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH InventoryScanner.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH InventoryScanner.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv SRCROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME InventoryScanner    setenv TARGET_BUILD_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv TARGET_NAME InventoryScanner    setenv TARGET_TEMP_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build    setenv TEMP_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build    setenv TEMP_FILES_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build    setenv TEMP_FILE_DIR /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build    setenv TEMP_ROOT /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 695219991    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH InventoryScanner.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER a1kjg01    setenv USER_APPS_DIR /Users/a1kjg01/Applications    setenv USER_LIBRARY_DIR /Users/a1kjg01/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH InventoryScanner.app/version.plist    setenv VERSION_INFO_BUILDER a1kjg01    setenv VERSION_INFO_FILE InventoryScanner_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:InventoryScanner  PROJECT:InventoryScanner-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME InventoryScanner.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4H127    setenv XCODE_VERSION_ACTUAL 0460    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0460    setenv YACC yacc    /bin/sh -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/Script-304B58A110DAC018002A0835.sh36"A59F306F-7D1A-471A-859A-AF84F674299E-
+
+CProcessInfoPlistFile /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Info.plist InventoryScanner/InventoryScanner-Info.plist
+s393351436.545053
+e393351436.547980
+r1
+xProcessInfoPlistFile
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Info.plist
+xInventoryScanner/InventoryScanner-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Process InventoryScanner/InventoryScanner-Info.plist679b8b0c1172b741^bf488c0c1172b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Info.plist0000000000000000^860"ProcessInfoPlistFile build/InventoryScanner.app/Info.plist InventoryScanner/InventoryScanner-Info.plist    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    builtin-infoPlistUtility InventoryScanner/InventoryScanner-Info.plist -genpkginfo /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app/Info.plist36"0187566E-4AB7-4ADD-BA51-97433F443EF7-
+
+CProcessPCH /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s393351443.501330
+e393351444.362403
+r1
+xProcessPCH
+x/var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.pth
+xInventoryScanner/InventoryScanner-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Precompile InventoryScanner/InventoryScanner-Prefix.pch1b8180131172b741^5cc75c141172b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch0000000000000000^4046"ProcessPCH /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build --serialize-diagnostics /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch -o /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-aspezlbxonftjrdfavpucdrcgncm/InventoryScanner-Prefix.pch.d36"617E1BC4-FA13-40CA-ACA9-A13D7169E813-
+
+CProcessPCH++ /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s393351443.501484
+e393351443.533471
+r1
+xProcessPCH++
+x/var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.pth
+xInventoryScanner/InventoryScanner-Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Precompile InventoryScanner/InventoryScanner-Prefix.pch668380131172b741^d69088131172b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch0000000000000000^3918"ProcessPCH++ /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build --serialize-diagnostics /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch -o /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-cefuowlplsoylsbfjcpykkkojegs/InventoryScanner-Prefix.pch.d36"C7D4555D-CBD1-476F-8B17-F44959E3DEFB-
+
+CProcessPCH++ /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s393351443.501317
+e393351443.942523
+r1
+xProcessPCH++
+x/var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.pth
+xInventoryScanner/InventoryScanner-Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Precompile InventoryScanner/InventoryScanner-Prefix.pchbb7f80131172b741^8c4bf1131172b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch0000000000000000^4170"ProcessPCH++ /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.pth InventoryScanner/InventoryScanner-Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-generated-files.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-own-target-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-all-target-headers.hmap -iquote /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/InventoryScanner-project-headers.hmap -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/usr/local/lib/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/UninstalledProducts/include -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources/i386 -I/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.build/Debug-iphonesimulator/InventoryScanner.build/DerivedSources -F/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build --serialize-diagnostics /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.dia -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/InventoryScanner/InventoryScanner-Prefix.pch -o /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/n5/r3f5vg755qlbq64t3p3v__5wmq0drq/C/com.apple.Xcode.695219991/SharedPrecompiledHeaders/InventoryScanner-Prefix-gabsmkacgfjqkhesepioqhgznlxl/InventoryScanner-Prefix.pch.d36"D25C8368-13E1-4CE4-81A1-B59CE539B1EA-
+
+CTouch /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app
+s393351449.193725
+e393351449.245843
+r1
+xTouch
+x/Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Touch /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app54a931191172b741^35f13e191172b741^---0#0#0#--551"Touch build/InventoryScanner.app    cd /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/a1kjg01/SDK/android/sdk/tools/:/Users/a1kjg01/SDK/android/sdk/platform-tools/:/Users/a1kjg01/SDK/air/bin/"    /usr/bin/touch -c /Users/a1kjg01/Documents/appdev/InventoryScanner/platforms/ios/build/InventoryScanner.app36"A89FF226-D4F4-4004-8114-D4E5C922A719-
+

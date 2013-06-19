@@ -1,8 +1,8 @@
-'use strict';
-
 define([
-	'backbone'
-], function( Backbone ) {
+	'app'
+], function( app ) {
+	'use strict';
+
 	app.Views.LaunchPage = Backbone.View.extend( {
 		el: '.hero-unit',
 
@@ -15,7 +15,8 @@ define([
 		},
 
 		render: function() {
-			this.$el.html( this.template );
+			var data = { cordova: app.cordova };
+			this.$el.html( this.template(data) );
 		},
 
 		scan: function() {
@@ -30,4 +31,6 @@ define([
 			app.Router.router.navigate( 'browse', { trigger: true });
 		}
 	});
+
+	return app.Views.LaunchPage;
 });

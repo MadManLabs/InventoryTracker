@@ -1,8 +1,8 @@
-'use strict';
-
 define([
-	'backbone'
-], function( Backbone ) {
+	'app'
+], function( app ) {
+	'use strict';
+
 	app.Views.DevicePage = Backbone.View.extend( {
 		el: '.hero-unit',
 
@@ -12,13 +12,16 @@ define([
 			var expires;
 			var expired;
 
-			if ( this.model.get( 'expires' ) - moment() <= 0 )
+			if ( this.model.get( 'expires' ) - moment() <= 0 ) {
 				expired = this.model.get( 'expires' ).fromNow();
-			else
+			}
+			else {
 				expires = this.model.get( 'expires' ).fromNow();
-
+			}
 			this.$el.html( this.template({ model: this.model, expires: expires, expired: expired }) );
 		}
 	});
+
+	return app.Views.DevicePage;
 });
 

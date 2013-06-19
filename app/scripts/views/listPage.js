@@ -1,9 +1,9 @@
-'use strict';
-
 define([
-	'backbone',
+	'app',
 	'collections/devices'
-], function( Backbone ) {
+], function( app ) {
+	'use strict';
+
 	app.Views.ListPage = Backbone.View.extend( {
 		el: '.hero-unit',
 
@@ -48,12 +48,15 @@ define([
 
 			var target;
 
-			if( clickedElement.hasClass( 'asset' ) || clickedElement.hasClass( 'subText' ) )
+			if( clickedElement.hasClass( 'asset' ) || clickedElement.hasClass( 'subText' ) ) {
 				target = clickedElement.find( '.serial' ).html();
-			else if( clickedElement.hasClass( 'serial' ) )
+			}
+			else if( clickedElement.hasClass( 'serial' ) ) {
 				target = clickedElement.html();
-			else
+			}
+			else {
 				target = clickedElement.siblings( '.serial' ).html();
+			}
 
 			app.Router.router.navigate( 'device/' + target, { trigger: true });
 		},
@@ -77,12 +80,13 @@ define([
 				_.each(filteredCollection, function( element ) {
 					expires = undefined;
 
-					if ( element.get( 'expires' ) - moment() <= 0 )
+					if ( element.get( 'expires' ) - moment() <= 0 ) {
 						expires = element.get( 'expires' ).fromNow();
 					if( this.subText )
 						listElements.push( { showAttribute: element.get( this.showAttribute ), subText: element.get( this.subText ), expires: expires, lost: element.get( 'lost' ) } );
 					else
 						listElements.push( element.get( this.showAttribute ) );
+					}
 				}, this );
 			} else {
 				listElements = this.collection.pluck( this.showAttribute );
@@ -93,5 +97,7 @@ define([
 			this.$el.html( this.template({ listElements: uniqueListElements }) );
 		}
 	});
+
+	return app.Views.ListPage;
 });
 

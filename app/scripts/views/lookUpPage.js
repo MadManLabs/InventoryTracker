@@ -1,8 +1,8 @@
-'use strict';
-
 define([
-	'backbone'
-], function( Backbone ) {
+	'app'
+], function( app ) {
+	'use strict';
+
 	app.Views.LookUpPage = Backbone.View.extend( {
 		el: '.hero-unit',
 
@@ -20,4 +20,6 @@ define([
 			console.log('submit device number look up');
 		},
 	});
+
+	return app.Views.LookUpPage;
 });

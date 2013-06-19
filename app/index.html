@@ -34,14 +34,14 @@
 
 		<script id='launchPageTemplate' type='text/template'>
 			<div class='launchButtons btn-group btn-group-vertical'>
-				<button class='scan btn'>Scan</button>
+				<% if (cordova) { %><button class='scan btn'>Scan</button><% } %>
 				<button class='lookUp btn'>Enter device number</button>
 				<button class='browse btn'>Browse</button>
 			</div>
 		</script>
 
 		<script id='scanPageTemplate' type='text/template'>
-			<span>Placeholder for the camera barcode scanning feature</span>
+			Scanning...
 		</script>
 
 		<script id='lookUpPageTemplate' type='text/template'>
@@ -118,6 +118,12 @@
 
 		<!-- build:js scripts/main.js -->
 		<script data-main='scripts/main' src='bower_components/requirejs/require.js'></script>
+		<!-- endbuild -->
+		<!-- build:js cordova.js -->
+		<script src="scripts/vendor/cordova.js"></script>
+		<!-- endbuild -->
+		<!-- build:js barcodescanner.js -->
+		<script src="scripts/vendor/barcodescanner.js"></script>
 		<!-- endbuild -->
 </body>
 </html>

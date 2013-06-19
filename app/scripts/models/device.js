@@ -1,6 +1,7 @@
 define([
-	'backbone'
-], function( Backbone ) {
+	'app'
+], function( app ) {
+	'use strict';
 
 	app.Models.Device = Backbone.Model.extend ({
 		defaults: {
@@ -18,4 +19,5 @@ define([
 		}
 	});
 
+	return app.Models.Device;
 });

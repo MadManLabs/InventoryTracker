@@ -1,26 +1,7 @@
 /*global require*/
-'use strict';
-
-// Provide a global location to place configuration settings and module creation
-var app = {
-	Models: {},
-	Collections: {},
-	Views: {},
-	Router: {}
-};
 
 require.config({
 	shim: {
-		underscore: {
-			exports: '_'
-		},
-		backbone: {
-			deps: [
-				'underscore',
-				'jquery'
-			],
-			exports: 'Backbone'
-		},
 		bootstrap: {
 			deps: ['jquery'],
 			exports: 'jquery'
@@ -37,11 +18,11 @@ require.config({
 });
 
 require([
-	'backbone',
+	'app',
+	'router',
 	'bootstrap',
 	'moment',
 	'localStorage',
-	'router',
 	'models/device',
 	'models/department',
 	'models/employee',
@@ -54,11 +35,22 @@ require([
 	'views/browsePage',
 	'views/listPage',
 	'views/devicePage'
-], function ( Backbone ) {
-	app.Router.router = new app.Router.Router();
-	app.Router.router.initializeStorage();
+], function ( app, Router ) {
+	'use strict';
 
-	Backbone.history.start();
+	function onDeviceReady() {
+		app.cordova = true;
+		Router.initialize();
+	}
 
-	return app.Router.router;
+	document.addEventListener('deviceready', onDeviceReady, false);
+
+// Init for Browser Only; Comment out if deploying to Cordova //
+	// $(document).ready(function(){
+	// 	if (!window.device && !app.cordova) {
+	// 		Router.initialize();
+	// 	}
+	// });
+// END Init //
+
 });

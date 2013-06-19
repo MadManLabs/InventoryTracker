@@ -1,6 +1,7 @@
 define([
-	'backbone'
-], function( Backbone ) {
+	'app'
+], function( app ) {
+	'use strict';
 
 	app.Models.Department = Backbone.Model.extend ({
 		defaults: {
@@ -9,4 +10,5 @@ define([
 		}
 	});
 
+	return app.Models.Department;
 });

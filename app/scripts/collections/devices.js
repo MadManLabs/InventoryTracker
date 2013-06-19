@@ -1,8 +1,12 @@
 define([
-	'backbone',
+	'app',
 	'models/device'
-], function( Backbone ) {
+], function( app ) {
+	'use strict';
+
 	app.Collections.Devices = Backbone.Collection.extend ({
 		model: app.Models.Device
 	});
+
+	return app.Collections.Devices;
 });

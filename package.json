@@ -24,7 +24,7 @@
     "grunt-regarde": "~0.1.1",
     "grunt-open": "~0.2.0",
     "matchdep": "~0.1.2",
-    "cordova": "~2.8.19",
+    "cordova": "~2.8.15",
     "grunt-shell": "~0.2.2"
   },
   "engines": {

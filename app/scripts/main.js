@@ -33,13 +33,15 @@ require([
 	'views/lookUpPage',
 	'views/browsePage',
 	'views/listPage',
-	'views/devicePage'
+	'views/devicePage',
+	'util/noclickdelay'
 ], function ( app, Router ) {
 	'use strict';
 
 	function onDeviceReady() {
 		app.cordova = true;
 		Router.initialize();
+		new app.util.NoClickDelay($('body')[0]);
 	}
 
 	document.addEventListener('deviceready', onDeviceReady, false);

@@ -13,6 +13,7 @@ function () {
 		Collections: {},
 		Views: {},
 		Router: {},
+		util: {},
 		cordova: false
 	};
 });

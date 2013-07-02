@@ -5,6 +5,7 @@ define([
 	'collections/departments',
 	'views/launchPage',
 	'views/scanPage',
+	'views/nfcPage',
 	'views/lookUpPage',
 	'views/browsePage'
 ], function( app, moment ) {
@@ -16,6 +17,7 @@ define([
 			''								: 'defaultRoute',
 			'launch'						: 'launchApp',
 			'scan'							: 'launchScan',
+			'nfc'							: 'launchNFC',
 			'lookUp'						: 'launchLookUp',
 			'browse'						: 'launchBrowse',
 			'list/devices'					: 'listDeviceTypes',
@@ -38,6 +40,10 @@ define([
 
 		launchScan: function() {
 			app.Views.scanPage.render();
+		},
+
+		launchNFC: function() {
+			app.Views.nfcPage.render();
 		},
 
 		launchLookUp: function() {
@@ -166,10 +172,12 @@ define([
 		app.Views.homeNavigation = app.Views.homeNavigation || new app.Views.HomeNavigation();
 		app.Views.launchPage = app.Views.launchPage || new app.Views.LaunchPage();
 		app.Views.scanPage = app.Views.scanPage || new app.Views.ScanPage();
+		app.Views.nfcPage = app.Views.nfcPage || new app.Views.NFCPage();
 		app.Views.lookUpPage = app.Views.lookUpPage || new app.Views.LookUpPage();
 		app.Views.browsePage = app.Views.browsePage || new app.Views.BrowsePage();
 		app.Views.listPage = app.Views.listPage || new app.Views.ListPage();
 		app.Views.devicePage = app.Views.devicePage || new app.Views.DevicePage();
+
 		Backbone.history.start();
 		app.Router.router.initializeStorage();
 		return app.Router.router;

@@ -30,6 +30,7 @@ require([
 	'views/homeNavigation',
 	'views/launchPage',
 	'views/scanPage',
+	'views/nfcPage',
 	'views/lookUpPage',
 	'views/browsePage',
 	'views/listPage',
@@ -47,11 +48,13 @@ require([
 	document.addEventListener('deviceready', onDeviceReady, false);
 
 // Init for Browser Only; Comment out if deploying to Cordova //
-	// $(document).ready(function(){
-	// 	if (!window.device && !app.cordova) {
-	// 		Router.initialize();
-	// 	}
-	// });
+	$(document).ready(function(){
+		// if (!window.device && !app.cordova) {
+		// 	app.cordova = true;
+		// 	window.device = { platform: 'Android'};
+		// 	Router.initialize();
+		// }
+	});
 // END Init //
 
 });

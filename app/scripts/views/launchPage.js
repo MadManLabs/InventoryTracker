@@ -10,17 +10,22 @@ define([
 
 		events: {
 			'click .scan'	: 'scan',
+			'click .nfc'	: 'nfc',
 			'click .lookUp'	: 'lookUp',
 			'click .browse'	: 'browse'
 		},
 
 		render: function() {
-			var data = { cordova: app.cordova };
+			var data = { cordova: app.cordova, device: device.platform };
 			this.$el.html( this.template( data ) );
 		},
 
 		scan: function() {
 			app.Router.router.navigate( 'scan', { trigger: true });
+		},
+
+		nfc: function() {
+			app.Router.router.navigate( 'nfc', { trigger: true });
 		},
 
 		lookUp: function() {

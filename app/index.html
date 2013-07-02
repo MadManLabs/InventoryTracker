@@ -42,6 +42,7 @@
 		<script id='launchPageTemplate' type='text/template'>
 			<div class='launchButtons btn-group btn-group-vertical'>
 				<% if (cordova) { %><button class='scan btn'>Scan</button><% } %>
+				<% if( device === 'Android' ) { %><button class='nfc btn'>NFC</button><% } %>
 				<button class='lookUp btn'>Enter device number</button>
 				<button class='browse btn'>Browse</button>
 			</div>
@@ -49,6 +50,10 @@
 
 		<script id='scanPageTemplate' type='text/template'>
 			<span>Scanning...</span>
+		</script>
+
+		<script id='NFCPageTemplate' type='text/template'>
+			<span>NFC...ing</span>
 		</script>
 
 		<script id='lookUpPageTemplate' type='text/template'>

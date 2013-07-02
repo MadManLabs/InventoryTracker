@@ -282,7 +282,7 @@ module.exports = function (grunt) {
             },
             cordova_build_android: {
                 command: 'cordova build android'
-            } 
+            }
         }
     });
 
@@ -344,7 +344,7 @@ module.exports = function (grunt) {
         'shell:cordova_build_ios'
     ]);
 
-    grunt.registerTask('ios', [
+    grunt.registerTask('android', [
         'build',
         'shell:cordova_build_android'
     ]);

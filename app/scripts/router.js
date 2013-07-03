@@ -30,7 +30,7 @@ define([
 		},
 
 		defaultRoute: function() {
-			this.navigate( 'launch', { trigger: true });
+			this.navigate( 'launch', { trigger: true } );
 		},
 
 		launchApp: function() {
@@ -183,5 +183,5 @@ define([
 		return app.Router.router;
 	};
 
-	return {initialize: initialize};
+	return { initialize: initialize };
 });

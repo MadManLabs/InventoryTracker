@@ -20,11 +20,11 @@ define([
 		},
 
 		listDevices: function() {
-			app.Router.router.navigate( 'list/devices', { trigger: true });
+			app.Router.router.navigate( 'list/devices', { trigger: true } );
 		},
 
 		listDepartments: function() {
-			app.Router.router.navigate( 'list/departments', { trigger: true });
+			app.Router.router.navigate( 'list/departments', { trigger: true } );
 		}
 	});
 

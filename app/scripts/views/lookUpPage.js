@@ -22,7 +22,7 @@ define([
 			var serialNumbers = app.Collections.devices.pluck( 'serial' );
 
 			if( _.contains( serialNumbers, target ) ) {
-				app.Router.router.navigate( 'device/' + target, { trigger: true });
+				app.Router.router.navigate( 'device/' + target, { trigger: true } );
 			}
 			else {
 				$( '.lookUpError' ).fadeIn();

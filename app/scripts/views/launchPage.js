@@ -21,19 +21,19 @@ define([
 		},
 
 		scan: function() {
-			app.Router.router.navigate( 'scan', { trigger: true });
+			app.Router.router.navigate( 'scan', { trigger: true } );
 		},
 
 		nfc: function() {
-			app.Router.router.navigate( 'nfc', { trigger: true });
+			app.Router.router.navigate( 'nfc', { trigger: true } );
 		},
 
 		lookUp: function() {
-			app.Router.router.navigate( 'lookUp', { trigger: true });
+			app.Router.router.navigate( 'lookUp', { trigger: true } );
 		},
 
 		browse: function() {
-			app.Router.router.navigate( 'browse', { trigger: true });
+			app.Router.router.navigate( 'browse', { trigger: true } );
 		}
 	});
 

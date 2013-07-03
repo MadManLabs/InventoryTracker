@@ -49,11 +49,11 @@ require([
 
 // Init for Browser Only; Comment out if deploying to Cordova //
 	$(document).ready(function(){
-		// if (!window.device && !app.cordova) {
-		// 	app.cordova = true;
-		// 	window.device = { platform: 'Android'};
-		// 	Router.initialize();
-		// }
+		if (!window.device && !app.cordova) {
+			app.cordova = true;
+			window.device = { platform: 'Android'};
+			Router.initialize();
+		}
 	});
 // END Init //
 

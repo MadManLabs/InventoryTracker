@@ -278,10 +278,10 @@ module.exports = function (grunt) {
         },
         shell: {
             cordova_build_ios: {
-                command: 'cordova build ios'
+                command: './node_modules/cordova/bin/cordova build ios'
             },
             cordova_build_android: {
-                command: 'cordova build android'
+                command: './node_modules/cordova/bin/cordova build android'
             }
         }
     });
